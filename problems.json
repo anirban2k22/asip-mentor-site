@@ -1,0 +1,1246 @@
+{
+ "meta": {
+  "total": 41,
+  "generated": "2026-10-05",
+  "note": "B refs are partner-organisation briefs, S refs are student-raised statements."
+ },
+ "clusters": [
+  {
+   "key": "AI",
+   "name": "AI, data and signal processing",
+   "blurb": "Machine learning, computer vision, audio and language models, statistics and data work."
+  },
+  {
+   "key": "SW",
+   "name": "Software platforms and applications",
+   "blurb": "Web and mobile products, integrations, data platforms, payments and dashboards."
+  },
+  {
+   "key": "EE",
+   "name": "Electronics, embedded systems and instrumentation",
+   "blurb": "Sensing, embedded hardware, power, connectivity and measurement."
+  },
+  {
+   "key": "MECH",
+   "name": "Mechanical design, fabrication and robotics",
+   "blurb": "Mechanisms, structures, materials, field machines and robots."
+  }
+ ],
+ "problems": [
+  {
+   "id": "B01",
+   "source": "partner",
+   "cluster": "SW",
+   "title": "Opportunity Navigator",
+   "owner": "Dream a Dream",
+   "domains": [
+    "Education",
+    "Livelihoods"
+   ],
+   "summary": "Jobs, courses and scholarships exist on dozens of sites. Put them where a young person can use them.",
+   "skills": [
+    "Search and ranking",
+    "Retrieval over documents",
+    "Multilingual, low-bandwidth front end",
+    "Data collection and cleaning"
+   ],
+   "detail": {
+    "whoYouWorkWith": "Dream a Dream is a Bengaluru non-profit that works with children and young people from vulnerable backgrounds. Its method is life skills and social-emotional learning, not academic coaching. It runs Thriving Centres for young people, works inside government schools, and has state hubs across India. It points out that 54% of India’s young people are not ready for work.",
+    "situation": "A young person at a Thriving Centre wants a job, a course, or money to study. The information they need already exists. It is spread across dozens of websites, in more than one language, written for people who already understand the system. Government schemes for education, jobs, skills, business and financial support sit on separate central and state portals, each with its own rules and forms.",
+    "whatIsGoingWrong": "Young people find opportunities through people they already know. Their networks are small, so their options are small. Someone with an uncle in a bank hears about bank jobs. Someone without one hears about nothing.\n\nDream a Dream describes the failure as a sentence: young people can say “I am interested in this” but cannot say “I know what I can do next”. Interest does not turn into a step.",
+    "whyNotFixed": "Job portals exist and are useless here. They assume a degree, a resume, a stable internet connection, and enough English to read a listing. They rank by employer need, not by what a young person could realistically get. Scholarship aggregators go stale within a year because the deadlines move and nobody maintains them.\n\nThe hard part is not collecting listings. It is judging which of them a specific person can actually get, and saying so honestly.",
+    "whatExists": "Dream a Dream runs a career awareness approach today, and asks you to go beyond it rather than repeat it.\n\nAsk them what that approach covers, what tools the facilitators use, and what has already been tried and dropped. Do that before you design anything.",
+    "whatYouHave": "- public government scheme portals and their data, where it is published\n- access to Thriving Centre facilitators and young people for interviews, subject to Dream a Dream’s consent process\n- any opportunity list, spreadsheet or partner feed Dream a Dream already keeps — ask whether it can be shared",
+    "doneIn90Days": "A working tool that a facilitator can sit down with a young person and use. It has to do three things: find opportunities the young person would not have found alone, say plainly whether they are eligible and what it would take, and end with a next step specific enough to act on this week. It must work for someone reading in Kannada as comfortably as in English, and on a low-end Android phone.",
+    "rules": "- no scraped personal data about young people leaves Dream a Dream’s control\n- the tool must not invent an opportunity, a deadline or an eligibility rule — if you cannot source it, say so on screen\n- it must be usable by a facilitator with no technical training, on a phone, offline for at least the reading parts",
+    "findingYourApproach": "Your first idea will probably be everyone else’s. Before you commit to it, find out what already exists in this space and why none of it has solved the problem for a young person at a Thriving Centre.\n\nThen answer the questions a good approach has to answer: who keeps this accurate in month seven, how do you prove an eligibility claim is right, and what does the tool do when the honest answer is that this person is not eligible for anything yet?",
+    "sponsor": "Dream a Dream.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — CS, IT. Some room for design-minded students from any branch.\n- **Technical skills** — Data collection and cleaning, search and ranking, retrieval over documents, multilingual interfaces, low-bandwidth front-end work.\n- **Other skills** — User interviews, writing plainly for a reader who is not you, judging a source’s reliability."
+   }
+  },
+  {
+   "id": "B02",
+   "source": "partner",
+   "cluster": "AI",
+   "title": "Community Asset and Youth Mapping",
+   "owner": "Dream a Dream",
+   "domains": [
+    "Education",
+    "Livelihoods"
+   ],
+   "summary": "Map the young people, employers and services within 8 to 10 km of a centre.",
+   "skills": [
+    "Geospatial analysis and mapping",
+    "Public data sourcing",
+    "Estimation from incomplete data",
+    "Survey design"
+   ],
+   "detail": {
+    "whoYouWorkWith": "Dream a Dream, as described in Brief 01. This problem sits with the team that runs the Thriving Centres and decides who the centre should be reaching.",
+    "situation": "A Thriving Centre sits in a neighbourhood. Within 8 to 10 kilometres of it there are young people who have left school, young people about to leave, employers, training institutes, clinics, libraries, sports grounds, self-help groups and small businesses. Some of that is recorded in census data, school records and government datasets. Most of it is in nobody’s records at all.",
+    "whatIsGoingWrong": "The centre reaches the young people who walk in. It does not know how many it is missing, or where they are. Outreach is guesswork.\n\nThe same blindness applies to what is around the centre. A tailoring unit two streets away that would take an apprentice, or a college with a free evening class, is invisible unless a staff member happens to know about it.",
+    "whyNotFixed": "Indian secondary data on young people is patchy, out of date, and published at the wrong level. District figures do not tell you about one neighbourhood. School dropout data exists but is held by different departments in different formats. Mapping community assets by hand takes weeks per neighbourhood and goes stale.",
+    "whatExists": "Ask Dream a Dream what mapping they have already tried, and what data they hold on the young people currently attending. Do not assume the answer is nothing. Finding out is the first piece of work.",
+    "whatYouHave": "- published secondary data: census, education department records, state dashboards, open map data\n- the location of at least one Thriving Centre as your test site\n- possible fieldwork in that neighbourhood, subject to Dream a Dream’s consent process",
+    "doneIn90Days": "A map of one real neighbourhood around one real centre, plus the method you used to make it. The map has to answer two questions a centre manager will actually ask: which young people near us are we not reaching, and what is already here that we could use. The method matters as much as the map, because Dream a Dream needs to repeat this for the next centre without you.",
+    "rules": "- every figure on the map carries its source and the year it refers to\n- where data does not exist, the map says so rather than estimating\n- no identifiable information about any young person appears in anything you hand over\n- no household is surveyed door to door unless Dream a Dream is running the consent process",
+    "findingYourApproach": "Around nine other teams are reading this same brief. Assume your first instinct is also theirs, and go looking for what makes the problem hard rather than what makes a demonstration look good.\n\nTwo questions worth arriving with: how do you estimate a population you cannot see, from public data that was never collected for this purpose, and what would make a centre manager still be updating your map a year after you have gone?",
+    "sponsor": "Dream a Dream.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — CS, IT. Strong fit for anyone interested in data science or geospatial work.\n- **Technical skills** — Public data sourcing, geospatial analysis and mapping, estimation from incomplete data, data visualisation, survey design.\n- **Other skills** — Judging source quality, stating uncertainty honestly, documenting a method someone else can repeat."
+   }
+  },
+  {
+   "id": "B03",
+   "source": "partner",
+   "cluster": "SW",
+   "title": "Alumni and Mentor Network",
+   "owner": "Dream a Dream",
+   "domains": [
+    "Education",
+    "Livelihoods"
+   ],
+   "summary": "Young people leave the centre and contact is lost. Keep it, and match them to mentors.",
+   "skills": [
+    "Mobile and messaging interfaces",
+    "Matching logic",
+    "Privacy-aware data handling",
+    "Behavioural design"
+   ],
+   "detail": {
+    "whoYouWorkWith": "Dream a Dream, as described in Brief 01. This problem covers three of their questions at once: staying connected to alumni, helping young people learn from each other, and connecting them to people who can open doors.",
+    "situation": "Young people spend time at a Thriving Centre, build skills and confidence, and then leave. Some go into work, some into further study, some into neither. The centre loses touch with almost all of them.\n\nMeanwhile the young people still at the centre need two things the centre cannot supply on its own: someone slightly ahead of them who has done the thing they are trying to do, and someone outside their world who can make an introduction.",
+    "whatIsGoingWrong": "The alumni are the answer to the mentoring problem and nobody can find them. Phone numbers change. There is no reason to stay in touch, so nobody does.\n\nDream a Dream is explicit that the connection has to be worth something to the alumni too. A network that only asks past participants for favours will empty out.",
+    "whyNotFixed": "Alumni networks fail everywhere, including at wealthy universities with full-time staff running them. They fail for one reason: people join, nothing happens, they stop opening the emails. Building the database is a week of work. Making anyone come back is the actual problem, and it is a design problem more than a technical one.",
+    "whatExists": "An alumni contact list exists. It is unstructured and scattered, so expect to spend real time making it usable before you can do anything with it.",
+    "whatYouHave": "- access to current Thriving Centre participants and facilitators for interviews, subject to consent\n- access to alumni themselves, whose behaviour you most need to understand — reaching them is part of the work\n- a pilot with a real group during your cycle is possible. Whether it happens is up to you to convince Dream a Dream",
+    "doneIn90Days": "Something real that a group of young people used, with evidence of whether they came back. A design document is not enough. Even a small pilot with twenty people over three weeks, with honest numbers about how many returned after the first session, is worth more than a polished app nobody opened.",
+    "rules": "- contact details of young people stay under Dream a Dream’s control, not yours and not a third party’s\n- no young person is matched with an outside adult without Dream a Dream’s safeguarding process in between\n- the mechanism must give the alumni something, not only ask them for something",
+    "findingYourApproach": "Alumni networks and mentor-matching schemes have been built many times, by organisations with far more money than Dream a Dream, and most of them are dead. Find out why before you design yours.\n\nOne question decides this project: why does anyone open it a second time? If you cannot answer that in a sentence, you do not have a proposal yet.",
+    "sponsor": "Dream a Dream.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — CS, IT. Suits students who want product and behaviour work rather than heavy engineering.\n- **Technical skills** — Mobile-first and messaging-based interfaces, lightweight backend, matching logic, privacy-aware data handling.\n- **Other skills** — Behavioural design, running a pilot and measuring it honestly, interviewing, safeguarding awareness."
+   }
+  },
+  {
+   "id": "B04",
+   "source": "partner",
+   "cluster": "MECH",
+   "title": "Youth Ownership of the Centre",
+   "owner": "Dream a Dream",
+   "domains": [
+    "Education"
+   ],
+   "summary": "Outside session hours the building is just a building. Make it usable by young people.",
+   "skills": [
+    "Modular and flat-pack design",
+    "Fabrication with basic tools",
+    "Material selection and costing",
+    "Safety assessment"
+   ],
+   "detail": {
+    "whoYouWorkWith": "Dream a Dream, as described in Brief 01. This problem joins two of their questions: designing spaces that support the Thriving journey outside scheduled sessions, and designing spaces that invite young people to change them.",
+    "situation": "A Thriving Centre runs structured sessions at set times. Outside those hours the building is a building. Dream a Dream believes the important things — friendship, experimenting, belonging — happen in the unstructured time, and that the young people should be shaping the place, not visiting it.",
+    "whatIsGoingWrong": "A room designed by adults for a programme signals who it belongs to. Fixed furniture, locked cupboards and finished walls all say: this is ours, you are a guest. Young people behave accordingly.\n\nDream a Dream’s words for the shift they want are moving young people “from participants to co-creators”. Right now the physical space works against that.",
+    "whyNotFixed": "Handing over a space sounds easy and is not. Someone still has to be responsible when something breaks, when two groups want the same room, or when a decision goes badly. Most attempts collapse into either adults quietly taking control back, or a free-for-all that staff then have to clean up. The design has to survive both.",
+    "whatExists": "Floor plans, photographs, an inventory of what is in the building and the terms it is held on may all exist somewhere. Finding out what exists, and getting hold of it, is your job.",
+    "whatYouHave": "- site visits to at least one Thriving Centre, which you arrange yourselves\n- the young people who use it, as co-designers rather than research subjects\n- no materials budget at present. Anything you propose has to be cheap enough that the answer could change",
+    "doneIn90Days": "Something built and installed in a real centre, plus the rules that go with it. Both halves are required. A modular wall that young people can rearrange is useless without an answer to who decides, who fixes it, and what happens when it gets broken. Bring evidence that young people actually changed something after you left.",
+    "rules": "- safe for children and young people, including when misused\n- repairable by centre staff with ordinary tools and locally bought parts\n- reversible — nothing that permanently damages a rented building\n- designed with young people, not for them, with evidence of how they shaped it",
+    "findingYourApproach": "Furniture is the easy half. The harder half is that a room designed by adults signals who it belongs to, and no amount of soft seating changes that.\n\nThe stronger position deals with governance as well as objects: what are young people actually allowed to decide, how is that decision made and recorded, and what stops staff quietly overruling it?",
+    "sponsor": "Dream a Dream.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — Mechanical, and any branch with an interest in design. One of the few problems in this pool with a physical build at its centre.\n- **Technical skills** — Fabrication with basic tools, modular and flat-pack design, material selection and costing, safety assessment, prototyping.\n- **Other skills** — Participatory design, facilitation, writing rules people will actually follow."
+   }
+  },
+  {
+   "id": "B05",
+   "source": "partner",
+   "cluster": "MECH",
+   "title": "Physical Education for Grades 1 to 10",
+   "owner": "Dream a Dream",
+   "domains": [
+    "Education",
+    "Health"
+   ],
+   "summary": "One teacher, a wide range of ages and abilities, very little equipment.",
+   "skills": [
+    "Low-cost product design",
+    "Fabrication",
+    "Materials and durability",
+    "Safety testing"
+   ],
+   "detail": {
+    "whoYouWorkWith": "Dream a Dream, as described in Brief 01. This problem sits inside their Thriving Schools programme, which works in government schools alongside the state curriculum.",
+    "situation": "Physical education is on the timetable from Grade 1 to Grade 10. One teacher takes a class that spans a wide range of ages, sizes, confidence levels and physical abilities. Equipment is limited. The state curriculum sets what must be covered.",
+    "whatIsGoingWrong": "Most PE sessions are one game, played by the children who are already good at it. The rest stand at the edge. A child who is smaller, slower, less confident, or disabled gets less activity, not more, which is the reverse of what PE is for.\n\nDream a Dream wants sessions that are inclusive, engaging and right for the age group, across a ten-grade range.",
+    "whyNotFixed": "The teacher is the bottleneck and cannot be replaced. Anything that requires a PE specialist, a lot of setup, or careful supervision of small groups will not survive contact with a real school day. Equipment that needs storing, charging or repairing disappears within a term.",
+    "whatExists": "The state curriculum for physical education, which your work must align to rather than replace.\n\nWhich state, which curriculum document, what equipment the schools already have, and what Dream a Dream runs there now. Find all of that out early, because it shapes everything you design.",
+    "whatYouHave": "- access to a school, a class and a PE teacher for testing. You will have to hustle for it\n- class size, ground size and the current equipment list. Ask Dream a Dream when you meet them — these are good scoping questions",
+    "doneIn90Days": "Something tested with real children in a real school, with evidence about who participated. The strongest measure is simple: count how many children in the class were physically active for how long, before and after. That single number is worth more than any amount of description.\n\nYour output can be equipment, a set of activities, a way of grouping children, or a combination. It must work for a teacher with no specialist training.",
+    "rules": "- safe for children, including unsupervised misuse\n- aligned to the state curriculum, not a replacement for it\n- cheap enough to put in many schools, and repairable locally\n- inclusive by design, including for children with disabilities — not a separate activity for them",
+    "findingYourApproach": "Be clear about what you are actually solving. The problem is not a shortage of equipment. It is that six children dominate any game with a ball in it while thirty stand at the edge.\n\nWhatever you propose will be judged against one measure: how many children were physically active, and for how long. Work backwards from that number.",
+    "sponsor": "Dream a Dream, Thriving Schools programme.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — Mechanical, and any branch interested in design or sport. Little software content.\n- **Technical skills** — Low-cost product design, fabrication, materials and durability, safety testing, designing for measurement.\n- **Other skills** — Working with teachers and children, observation and measurement, inclusive design, curriculum reading."
+   }
+  },
+  {
+   "id": "B06",
+   "source": "partner",
+   "cluster": "AI",
+   "title": "Finding a Child's Real Learning Level",
+   "owner": "Project SparkL",
+   "domains": [
+    "Education"
+   ],
+   "summary": "A child enrolled in Grade 6 may read at Grade 2. Find the real level, at scale.",
+   "skills": [
+    "Speech and audio processing",
+    "Adaptive assessment logic",
+    "Offline-first design",
+    "Indic-script interfaces"
+   ],
+   "detail": {
+    "whoYouWorkWith": "Project SparkL is a Bengaluru trust, registered in 2022, that teaches foundational reading and arithmetic to children from vulnerable backgrounds, including children living in shelter homes. It runs after-school evening sessions at seven centres for about 130 to 140 children, with two partner organisations.",
+    "situation": "The children SparkL works with are enrolled in a school grade that does not match what they can actually do. A child may be registered in Grade 6 and be unable to read a Grade 2 sentence.\n\nSparkL already handles this properly. It assesses each child in Kannada, Maths and English across grade levels, works out a “skill grade”, and builds a learning plan from that rather than from the school grade. This is the core of their method and it works.",
+    "whatIsGoingWrong": "The method is manual, so it stops at seven centres. Assessing each child, working out the skill grade, planning the teaching and tracking progress all depend on a small number of people doing it by hand.\n\nSparkL wants to reach more children. Right now growth means hiring proportionally, which is the definition of a model that will not scale.",
+    "whyNotFixed": "Off-the-shelf learning apps assume the child’s grade is their level, which is precisely the assumption that fails here. Adaptive learning products assume a smartphone per child, reliable internet and a literate parent nearby. None of those hold in a shelter home in the evening.\n\nThere is also a harder problem. Assessing a child in three languages, including Kannada, without a trained adult listening to them read, is genuinely difficult.",
+    "whatExists": "SparkL’s own assessment approach and skill-grade system. Do not replace it — understand it first, then work out which parts a machine can carry. Facilitator training is a separate problem and is covered by Brief 19; coordinate with whoever takes it, because you are both working on how SparkL grows past seven centres.\n\nThe assessment materials, how the skill grade is worked out, and what records SparkL keeps today may all be available. Ask for them.",
+    "whatYouHave": "- sample assessment records, anonymised progress data and session plans, if you can persuade SparkL to share them\n- a session at a centre to sit in on, if you arrange it. Watching one is worth more than any document\n- the educators who run the sessions, who know more about this than any document will tell you",
+    "doneIn90Days": "One part of the loop, working, tested with real records. That could be the assessment itself, the skill-grade calculation, the learning plan, or the progress tracking. Choose one and make it good enough that SparkL would use it next term.\n\nIt must work in Kannada as well as English, on a shared low-end device, and without assuming internet during the session.",
+    "rules": "- no identifiable data about any child leaves SparkL’s control, and none goes into a third-party service without written agreement — several of these children are in shelter homes\n- Kannada is not an afterthought or a translated label — the assessment has to work in it\n- works offline during a session, syncs later\n- an educator with no technical training can run it",
+    "findingYourApproach": "Understand SparkL’s existing method properly before you automate any part of it. The educators have already solved problems you have not thought of.\n\nThen two questions decide whether SparkL could use what you build. How do you assess a child’s reading without an adult listening to them? And what happens on the evening the internet is down and the tablet is at 8%?",
+    "sponsor": "Project SparkL.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — CS, IT.\n- **Technical skills** — Offline-first application design, speech or audio processing for reading assessment, adaptive logic, multilingual and Indic-script interfaces, data privacy.\n- **Other skills** — Working with educators, assessment design, writing for children, understanding a method before automating it."
+   }
+  },
+  {
+   "id": "B07",
+   "source": "partner",
+   "cluster": "EE",
+   "title": "Two-Wheeler Technician Training",
+   "owner": "Project SparkL",
+   "domains": [
+    "Livelihoods",
+    "Education"
+   ],
+   "summary": "A 60 hour hands-on programme across petrol and electric two-wheelers, and the workshop to run it.",
+   "skills": [
+    "EV and IC powertrains",
+    "Battery systems and motor controllers",
+    "Diagnostics and workshop practice",
+    "Instructional design"
+   ],
+   "detail": {
+    "whoYouWorkWith": "Project SparkL, described in Brief 06. This problem comes from Project Scale Up, their work on making the organisation financially sustainable rather than grant-dependent.",
+    "situation": "SparkL wants to run a 60-hour hands-on training programme for young people aged 18 to 25 from ITI and Polytechnic backgrounds. It covers petrol vehicles, electric vehicles, scooters and motorcycles, and needs workshop infrastructure and practical exposure to work at all.\n\nSparkL has also identified a second gap: young people finish formal qualifications without the workplace skills that get them hired — communication, spreadsheets, presentations, email.",
+    "whatIsGoingWrong": "An ITI or Polytechnic certificate does not make someone employable in a two-wheeler workshop. The training is theory-heavy and the equipment is often a generation behind the vehicles on the road. Electric two-wheelers are the sharpest version of this: battery packs, controllers, motor diagnostics and high-voltage safety are absent from most curricula.",
+    "whyNotFixed": "Hands-on training is expensive. It needs vehicles, tools, space and a trainer per small group. Manufacturer training programmes exist but are closed to their own dealer networks. Sixty hours is a real constraint: it is enough to make someone useful at a narrow set of tasks and nowhere near enough to make a general technician.",
+    "whatExists": "Atria University and Atria Institute of Technology have an e-mobility department, which currently holds the Atria Foundation food truck for an electric powertrain conversion. That department is the most obvious source of equipment, expertise and workshop space for this problem.\n\nWhether SparkL has drafted any of the curriculum, and whether workshop space or vehicles have been secured, is for you to find out.",
+    "whatYouHave": "- workshop space, tools and vehicles to train on. Securing these is part of the project\n- trainee candidates to test the material on, whom you will have to recruit\n- the Atria e-mobility department, which holds the equipment and the expertise. Whether they take part is up to you to arrange",
+    "doneIn90Days": "A section of the 60 hours, built and taught to real people at least once, with evidence of what they could do afterwards that they could not do before. That means the trainer notes, the equipment list with costs, the practical exercises, and the assessment that proves competence.\n\nAn employer’s view is what matters. “Completed the module” is worth nothing. “Can diagnose a controller fault in under fifteen minutes” is worth something.",
+    "rules": "- high-voltage safety is taught and enforced before anyone touches a battery pack — this is not negotiable\n- the equipment list has to be affordable for a small training centre, with current prices and dates\n- the material must be teachable by a trainer who is a good mechanic, not an engineer\n- assessment proves a task can be done, not that a class was attended",
+    "findingYourApproach": "Sixty hours is the constraint that shapes everything. The useful question is not what a technician should know, but what you can honestly teach in sixty hours that gets someone hired.\n\nTalk to a workshop owner before you write a single line of syllabus. Ask what they actually test when somebody walks in looking for work.",
+    "sponsor": "Project SparkL, Project Scale Up.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — Mechanical and Electronics. The strongest Mech and EC problem in this pool.\n- **Technical skills** — Electric and internal combustion powertrains, battery systems, motor controllers, diagnostics, workshop practice, electrical safety, tooling and costing.\n- **Other skills** — Teaching and instructional design, competence assessment, talking to employers about what they hire for."
+   }
+  },
+  {
+   "id": "B08",
+   "source": "partner",
+   "cluster": "SW",
+   "title": "Communications Analytics Dashboard",
+   "owner": "Centre for Wildlife Studies",
+   "domains": [
+    "Environment"
+   ],
+   "summary": "Website, social, email and payment data sit in eight places and never form one picture.",
+   "skills": [
+    "Third-party APIs and their limits",
+    "Scheduled jobs",
+    "Data modelling",
+    "Dashboard design"
+   ],
+   "detail": {
+    "whoYouWorkWith": "The Centre for Wildlife Studies is a Bengaluru research and conservation organisation, working for around four decades on wildlife research, conservation, policy and education. Its programmes include Wild Seve, Wild Shaale, Wild Surakshe and a doctoral programme. Wild Seve alone has filed over 35,000 compensation claims for more than 17,000 families in over 4,000 settlements since 2015.\n\nThis problem comes from the Media and Outreach team, and CWS ranked it their first priority.",
+    "situation": "CWS communicates and fundraises through a website, Google Analytics, Google Search Console, Instagram, LinkedIn, YouTube, Flodesk for email, Razorpay for payments, and campaign activity on top. Each holds a piece of the picture. None of them talk to each other.",
+    "whatIsGoingWrong": "Somebody logs into eight systems every month, copies numbers into a spreadsheet, and builds a report. It takes hours, it happens late, and it produces figures nobody can act on quickly enough to change a campaign that is failing.",
+    "whyNotFixed": "The platforms make it hard on purpose. Instagram and LinkedIn restrict their data access, YouTube and GA4 have their own models and quotas, and Flodesk and Razorpay are small enough that their access options are limited. Some of these have no usable interface for automated access at all, which means part of this job is not integration but designing an honest manual step that does not rot.",
+    "whatExists": "The current monthly reporting process, whatever it is. Understand it before replacing it — the person who builds that spreadsheet knows which numbers matter and which are noise.\n\nAsk how the monthly report is built today, which platform accounts you could be given, and whether anyone has tried to automate it before.",
+    "whatYouHave": "- read-only access to each platform, which CWS has to grant. This is the single biggest thing to settle in week one\n- historical exports to build and test against, if CWS will share them\n- the Media and Outreach team, who will tell you what they actually look at",
+    "doneIn90Days": "A dashboard the CWS team opens instead of building the spreadsheet. It refreshes on its own where the platform allows it, and has a clear, documented manual step where it does not. Every metric has a written definition, so two people reading it agree on what it means. It comes with a handover document, because you leave and CWS keeps it.",
+    "rules": "- no donor personal data from Razorpay or Flodesk goes anywhere it should not, including into a chart\n- credentials are never stored in the code or the repository\n- a person who is not a programmer must be able to keep it running after you leave\n- where a number is manually entered, the dashboard says so",
+    "findingYourApproach": "Several teams will land on the same tool over exported spreadsheets, and it is not obviously the wrong answer. That means visuals will not separate you.\n\nMaintenance will. Who refreshes the export, what happens when a platform renames a column, and why is your answer better than the spreadsheet it replaces? Treat this as a data engineering and handover problem rather than a charting problem.",
+    "sponsor": "CWS Media and Outreach team. Note that this team also sponsors Brief 09, so their time is split.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — CS, IT.\n- **Technical skills** — Working with third-party interfaces and their limits, scheduled jobs, data modelling, dashboard and chart design, credential handling.\n- **Other skills** — Defining metrics unambiguously, writing documentation someone else can follow, designing for handover."
+   }
+  },
+  {
+   "id": "B09",
+   "source": "partner",
+   "cluster": "AI",
+   "title": "Find Anything CWS Has",
+   "owner": "Centre for Wildlife Studies",
+   "domains": [
+    "Environment"
+   ],
+   "summary": "Two large archives of photos, video and approved facts, with no way to find anything.",
+   "skills": [
+    "Search and retrieval",
+    "Image indexing and vision tagging",
+    "Metadata and permissions",
+    "Accuracy evaluation"
+   ],
+   "detail": {
+    "whoYouWorkWith": "CWS Media and Outreach, as described in Brief 08. This brief combines two of their requests, ranked second and third, because both are the same problem: finding what CWS already has.",
+    "situation": "Two archives. One is a large and growing set of photographs and videos in Google Drive folders. The other is a set of documents holding approved statistics, programme information and institutional facts — the numbers CWS is allowed to publish.\n\nA staff member writing a grant application or a press response needs both, quickly, and needs to know the number is current and approved.",
+    "whatIsGoingWrong": "Finding a photograph means remembering which folder it is in and who took it. Finding a statistic means asking a colleague, who may give you last year’s figure. A wrong number in a grant application or a news article is a real cost to a research organisation.",
+    "whyNotFixed": "Drive search reads filenames, and a filename like IMG_4471.jpg tells you nothing. Adding metadata to thousands of existing files by hand is more work than anyone has time for. For the documents, the problem is different: the difficulty is not searching but knowing which version is the approved one and who approved it.",
+    "whatExists": "Google Drive, which stays as the storage. CWS is explicit that they do not want to move their files. Whatever you build sits on top and links back to the original.\n\nFind out how large the archive is, how the folders are organised, what naming conventions already exist, and which documents count as approved.",
+    "whatYouHave": "- access to a defined set of Drive folders for the prototype, agreed with CWS\n- a controlled set of approved documents. CWS has indicated dummy or current data can be used\n- CWS has mentioned possible Slack integration as a nice-to-have, not a requirement",
+    "doneIn90Days": "Someone at CWS types a plain question and gets a useful answer. For an image: find photographs by programme, species, location, date, photographer, event, asset type and usage rights, with a link to the file in Drive. For a fact: give the answer, its source document, its date and a link — never the answer alone.\n\nIt also needs a repeatable way to add new material, or it stops being true within a month.",
+    "rules": "- every answer carries its source, its date and a link — an answer without a source is a defect, not a feature\n- the system must say “I do not know” rather than produce a plausible number\n- Drive permissions are respected — the search must not show someone a file they cannot open\n- usage rights on photographs are surfaced, because publishing an image CWS does not have rights to is a legal problem",
+    "findingYourApproach": "The interesting question is not how to make it answer. It is what happens when it answers confidently and wrongly.\n\nA wildlife organisation quoting a fabricated conflict statistic in a press release is worse off than with no tool at all. Work out how your system knows that it does not know, and design the human check that catches whatever gets through.",
+    "sponsor": "CWS Media and Outreach team, who also sponsor Brief 08.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — CS, IT.\n- **Technical skills** — Search and retrieval, document and image indexing, vision models for tagging, metadata design, permissions, evaluating a system for factual accuracy.\n- **Other skills** — Information architecture, designing a process people will keep using, testing for failure rather than for success."
+   }
+  },
+  {
+   "id": "B10",
+   "source": "partner",
+   "cluster": "SW",
+   "title": "Donor Relationship Prototype",
+   "owner": "Centre for Wildlife Studies",
+   "domains": [
+    "Environment"
+   ],
+   "summary": "Donor touchpoints are scattered and never become one relationship history.",
+   "skills": [
+    "Data modelling",
+    "Service integration",
+    "Segmentation logic",
+    "Language model as a component"
+   ],
+   "detail": {
+    "whoYouWorkWith": "The CWS Fundraising team. This is a different team from Briefs 08 and 09, with its own priorities and its own contact.",
+    "situation": "People come into contact with CWS through email, digital campaigns, events and donations. Each of those leaves a record somewhere. Together they never form one history of a relationship.\n\nCWS deals with two very different groups. Foundations, trusts and companies give large amounts on a reporting cycle with formal requirements. Individuals give small amounts, irregularly, and respond to completely different things.",
+    "whatIsGoingWrong": "Nobody can answer basic questions. How did this donor first hear about us? What have we sent them? What are they interested in? When should we contact them next? Without that, fundraising is a series of disconnected asks, and the people most likely to give again are treated like strangers.",
+    "whyNotFixed": "Commercial fundraising software exists and is priced for organisations much larger than CWS. Salesforce and similar tools are free or discounted for non-profits and then need a paid consultant to configure and maintain. The real question is not what to build but whether to build at all — and CWS has explicitly asked for that recommendation.",
+    "whatExists": "Records sit in Flodesk, Razorpay, event lists and spreadsheets. CWS has also specifically asked to explore connecting this system to an AI assistant, so that lead history, next-step reminders and call notes stay in one place with less manual updating.\n\nWhat records exist, in what systems and in what state, is your first question for the Fundraising team.",
+    "whatYouHave": "- dummy or sample data — CWS has said this is acceptable and expected\n- the Fundraising team, who can describe how a donor relationship actually develops\n- real anonymised data, if CWS agrees to share any. Plan on dummy data and treat anything real as a bonus",
+    "doneIn90Days": "Two things, and the second matters more than the first.\n\n- a working prototype on sample data showing acquisition source, interests, campaign engagement, communication history, contributions, separate handling of organisational and individual donors, and a suggested next step\n- a written recommendation on whether CWS should build, buy or adapt, with real costs and a clear reason — including the honest answer, if it is the right one, that CWS should not build this",
+    "rules": "- use dummy data by default; treat any real record as confidential\n- organisational and individual donors are modelled differently, because they behave differently\n- an automated next-step suggestion is a suggestion to a human, never an automatic email to a donor\n- the recommendation is evidence-based, with real prices, not an opinion",
+    "findingYourApproach": "A contact database with a dashboard demonstrates well and answers a question CWS did not ask.\n\nThey asked whether they should build at all. Take that seriously enough to be willing to argue against building. And take their request to connect this to an AI assistant seriously enough to work out what it would actually mean for call notes and follow-ups.",
+    "sponsor": "CWS Fundraising team.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — CS, IT. Suits students interested in product decisions as much as code.\n- **Technical skills** — Data modelling, application development, integration between services, working with a language model as a component, segmentation logic.\n- **Other skills** — Requirements gathering, cost analysis, writing a recommendation that argues a case, understanding fundraising as a process."
+   }
+  },
+  {
+   "id": "B11",
+   "source": "partner",
+   "cluster": "AI",
+   "title": "Identifying Species by Sound",
+   "owner": "Centre for Wildlife Studies",
+   "domains": [
+    "Environment"
+   ],
+   "summary": "Field recorders produce enormous audio. Most of it is wind. Find the calls that matter.",
+   "skills": [
+    "Audio signal processing",
+    "ML classification",
+    "Dataset construction and labelling",
+    "Evaluation under class imbalance"
+   ],
+   "detail": {
+    "whoYouWorkWith": "The CWS Research team. This is the third CWS team in this pool and the one with the highest standards for what it accepts.",
+    "situation": "CWS places acoustic recorders in the field to monitor species. The recorders produce enormous quantities of audio, most of it wind, rain, insects and silence. Somewhere in it are the calls that matter.\n\nAn engineering student is already building a classifier that identifies species from these recordings. It works. There is more data and more analysis than one person can get through.",
+    "whatIsGoingWrong": "The bottleneck is labelled data and validation, not model architecture. Someone has to listen to clips and confirm what is in them, and until that exists the classifier cannot be extended to new species or trusted for new sites.",
+    "whyNotFixed": "Labelling audio is slow and needs someone who can tell two similar calls apart. Field recordings are noisy in ways that clean training data is not. And a classifier used in research has to be right in a way a demo does not: a false positive in a species survey is a false scientific claim.",
+    "whatExists": "The existing classifier and the student building it. Coordinate with them from week one. Rebuilding what already works, in parallel, is the main way this project wastes a cycle.\n\nThe classifier’s architecture, which species it covers, how accurate it is, and how much labelled audio exists. Establish all four in your first conversation with the Research team.",
+    "whatYouHave": "- CWS acoustic recordingsCWS acoustic recordings. Volume, format and how they reach you are for you to agree with the Research team\n- the Research team, who will set the exact scope with you\n- the engineering student already on the project\n\nCWS has said the scope here is likely to change as more labelled audio and classifier results come in. Treat this brief as a starting point, not a specification.",
+    "doneIn90Days": "One bounded, agreed piece of work, finished to a standard CWS can cite. That is likely to be one of: a trained model for one additional species, a validated labelled dataset, or an accuracy evaluation of the existing classifier.\n\nResearch intends to use this in its own scientific output. Your methods, data handling and results must be documented to peer-reviewed standards. A working demo with no reproducible method is a failed project here, even if the model performs well.",
+    "rules": "- peer-reviewed documentation standard: reproducible method, stated assumptions, honest error rates\n- report what the model gets wrong, not only what it gets right\n- data stays confidential and is not uploaded to a public service without permission — recordings can reveal the location of threatened species\n- scope agreed with the Research team and the existing student before you start building\n- nothing about CWS data is published without their agreement",
+    "findingYourApproach": "The standard approach to this is well documented and every team will find it. Finding it is not the contribution.\n\nWhat it hides is the interesting part. The target species may appear in a tiny fraction of clips, accuracy may be the wrong measure entirely, and a field ecologist has to be able to check your result. Design for those three and you will have something CWS can publish.",
+    "sponsor": "CWS Research team. Note that CWS ranked this fifth of seven, so expect less of their attention than Briefs 08 to 10.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — Electronics and CS. One of the few problems here with genuine signal processing content.\n- **Technical skills** — Audio signal processing, machine learning for classification, dataset construction and labelling, evaluation under class imbalance, reproducible research practice.\n- **Other skills** — Scientific writing, working inside someone else’s project, reporting negative results honestly."
+   }
+  },
+  {
+   "id": "B12",
+   "source": "partner",
+   "cluster": "SW",
+   "title": "The LoveAll Transparency Ledger",
+   "owner": "Atria Foundation",
+   "domains": [
+    "Livelihoods"
+   ],
+   "summary": "Put charitable fund flow on a ledger so a donor can see exactly where the money went.",
+   "skills": [
+    "Distributed ledgers and smart contracts",
+    "Cryptographic hashing and key management",
+    "Payment flows",
+    "Design under regulatory constraint"
+   ],
+   "detail": {
+    "whoYouWorkWith": "Atria Foundation is the charitable arm of Atria Group. It runs food kitchens and food trucks, the Atria Mega Skill Centre, healthcare initiatives and plantation drives. Its stated numbers include over 1.7 crore cumulative meals served, more than 4,000 people trained in trades such as tailoring, hospitality and IT, and around 620 placed with employers including KPR Mills, Arvind Mills, Hotel Leela Palace and Reliance Trends. It operates around 20 kitchens across roughly 255 locations with 200 or more volunteers.\n\nLoveAll is its social loyalty card. Members pay ₹1,000 a year, get discounts across a network of Bengaluru restaurants and retailers, and their money funds four causes: Food, Education, Healthcare and Bio-Diversity.",
+    "situation": "LoveAll makes a promise most charities do not: that you can see exactly where your money went. The Foundation states it is moving its fund flow onto a blockchain so that transparency is coded in rather than promised.\n\nThe programme also wants to grow beyond funding Atria Foundation’s own work, and become a funding engine that other registered NGOs can plug into. That ambition is where the difficulty lives.",
+    "whatIsGoingWrong": "Nothing is broken yet. The promise has been made and the system that would keep it does not exist. Right now a member who asks “what did my ₹1,000 do” gets an aggregate number, not a traceable answer.\n\nThe harder problem is that a naive ledger would be wrong in a way that matters. Indian tax law treats “we spent money on our own programme” and “we gave money to another NGO” completely differently. A ledger that reports ₹1,00,000 sent to a partner NGO as ₹1,00,000 of impact misstates the Foundation’s tax position, even when the partner genuinely spent every rupee.",
+    "whyNotFixed": "Four sets of rules apply at the same time, and satisfying one while ignoring another still leaves you non-compliant:\n\n- **Income Tax Act** — a registered charity must apply at least 85% of its income to charitable purposes each year. Since the Finance Act 2023, a general donation from one registered NGO to another counts as only 85% application for the giver. Corpus donations do not count at all\n- **Companies Act, Section 135** — for corporate money to count as CSR, the receiving entity must be registered on Form CSR-1 and hold valid 12AB and 80G\n- **FCRA** — since the 2020 amendment, passing foreign contributions on to any other organisation is prohibited outright. This is a hard stop, not a tax inefficiency\n- **Digital Personal Data Protection Act 2023** — requires that personal data can be corrected and erased. A blockchain cannot easily erase anything. The main obligations are expected around May 2027\n\nThat last one is the genuine engineering tension in this problem, and nobody in the industry has solved it cleanly.",
+    "whatExists": "An 18-page context brief prepared by the Foundation, covering the fund-flow map, the stakeholder map, the four pillars, the original blockchain rationale and the full compliance picture. It deliberately stops short of proposing an architecture. Read it before you pitch — this is by far the best-prepared problem in this pool.\n\nRegistrations already in place: 12AB, 80G and CSR-1. Ground-truth data already being collected includes a mandatory daily photo submission from the food trucks and field check-ins, which the brief suggests could feed attestations.\n\nThe Foundation’s technology stack document exists as a Google Doc and could not be extracted into the context brief. It likely already defines the app and database layer your work would sit alongside, so ask for it early.",
+    "whatYouHave": "- the 18-page LoveAll context brief, including four diagrams: the fund-flow map, the four-pillar structure, a conceptual attestation pipeline, and the compliance layers\n- Atria Institute of Technology and Atria University, named in the brief as a possible source of technical and build support\n- the technology stack document, sample transaction data and the current app or database, all of which you will have to ask for",
+    "doneIn90Days": "A working prototype of one part of the pipeline, on simulated payments, that a compliance-minded reader would accept. The context brief names five building blocks worth prototyping:\n\n- a member ledger that recognises donors without putting their personal data on a chain\n- a fund pool where every inflow is tagged Food, Education, Healthcare, Bio-Diversity or Operations at the point of entry\n- a disbursement contract that releases funds only when a real-world event is attested — a delivery photo, a placement record, a plantation record\n- a routing module for transfers to partner NGOs that carries the compliance metadata with it\n- a public dashboard showing aggregated figures without exposing personal data\n\nPick one or two. Make the compliance behaviour real, not commented out.",
+    "rules": "- no raw personal data on any chain, public or permissioned — hashes, pseudonymous identifiers or aggregates only, with the real records held off-chain where they can be corrected or deleted\n- every inflow is tagged at entry on three axes: domestic or foreign, corpus or general, and CSR or donation or membership fee\n- foreign-tagged funds can never be routed to a partner NGO. The system must make this impossible, not merely discouraged\n- a transfer to a partner NGO carries an automatic 15% ineligible-application tag — do not model it as a 100% pass-through of value\n- the ledger must not split a ₹1,000 payment into a donation part and a membership-fee part\n- the same rupee is never presented as both CSR-eligible and 80G-deductible\n- you design to the legal constraints; you do not give legal or tax advice, and qualified professionals confirm them\n- no token that could be traded or held as value is ever issued",
+    "findingYourApproach": "Ten teams left alone with the word blockchain will build ten token ledgers. Do not be one of them until you have argued the question properly.\n\nFour questions decide a serious proposal. Does a chain earn its place here, against a signed append-only log with published hashes and an independent auditor? Who or what attests that a thousand meals were served, and why should anyone believe that source? Who holds the signing keys for a charity, and what happens when they are lost? And at ₹1,000 a membership, do per-transaction costs make your design uneconomic?\n\nOne thing to raise with the sponsor. The context brief treats 80G as making the ₹1,000 tax-attractive and mentions a “50% tax rebate” in the corporate pitch. Under India’s new personal tax regime, now the default, Chapter VI-A deductions including 80G are generally not available to individuals. Confirm this before you build any part of the story around it.",
+    "sponsor": "Atria Foundation, LoveAll Card. Contact given in the brief: contact@atriafoundation.org, +91 8971101055.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — CS, IT. The most demanding software problem in this pool.\n- **Technical skills** — Distributed ledgers and smart contracts, cryptographic hashing and signatures, key management, systems design under regulatory constraint, privacy-preserving data design, payment flows.\n- **Other skills** — Reading legislation and turning rules into system behaviour, arguing an architecture decision on evidence, explaining a technical design to a non-technical trustee."
+   }
+  },
+  {
+   "id": "B13",
+   "source": "partner",
+   "cluster": "SW",
+   "title": "Proving a Tree Is Still Alive",
+   "owner": "Project Chitoor",
+   "domains": [
+    "Environment",
+    "Agriculture"
+   ],
+   "summary": "A sponsor pays for a tree and needs auditable proof that it is alive years later.",
+   "skills": [
+    "Mobile data capture and offline sync",
+    "Geolocation and image verification",
+    "Payment and workflow automation",
+    "Audit trail design"
+   ],
+   "detail": {
+    "whoYouWorkWith": "Project Chitoor is a rural development project working across roughly 20 clusters with around 50 ground workers and about 250 families. It has three parts: farming and processing, education, and environment.\n\nIts legal entity, exact location and funding structure are not set out here. Establish them before you design anything that touches money.",
+    "situation": "The project wants to open a funding channel where a company or an individual pays to plant a tree and, in a meaningful sense, owns it. Companies with CSR obligations need reporting they can put in front of an auditor. Individuals need something that feels real.",
+    "whatIsGoingWrong": "Tree donation schemes have a credibility problem, and it is deserved. Many amount to a certificate and a stock photograph. A donor has no way to check that a specific tree was planted, is still alive, or was not sold to three other donors.\n\nThe project cannot fix this by sending updates by hand. With 50 ground workers already stretched, a scheme that needs a staff member to photograph each tree each quarter will die in its first year.",
+    "whyNotFixed": "Verifying that a specific tree in a field is alive is genuinely hard and genuinely boring. Satellite imagery cannot resolve one sapling. GPS drifts by metres. Tags fall off, fade, and get eaten. And whatever you design has to be done by a farm worker with a phone in one hand, at scale, for years, without anyone reminding them.",
+    "whatExists": "Trees are already being planted as part of the project’s environment work.\n\nHow many trees have been planted, whether any are recorded or located, and whether a donation channel exists today. All open, all findable.",
+    "whatYouHave": "- a real plantation site to pilot tracking on actual trees, which you will have to arrange\n- the ground staff who would operate whatever you design. Talk to them early, or you will design something they will not use\n- payments can be simulated; you do not need a live payment gateway",
+    "doneIn90Days": "Four things, working end to end on a small number of real trees:\n\n- a payment triggers assignment of a specific tree, creating a record with donor, amount, tree identifier, location and planting date\n- a way to check on that tree over time that ground staff will actually keep doing\n- reports generated and sent on a schedule, with nobody compiling them\n- an audit trail linking money to tree to outcome that would survive a CSR auditor’s questions\n\nPilot it on ten real trees rather than simulating a thousand.",
+    "rules": "- do not promise donors tax deductibility. The project has stated that the 80G deduction is not available under India’s new tax regime, so the reporting has to sell transparency and impact instead\n- tracking must be something a ground worker can do in seconds, in a field, on a basic phone, possibly offline\n- the link from money to tree to outcome must be auditable end to end\n- if a tree dies, the system must be able to say so. A scheme that cannot report a failure is not a transparency system",
+    "findingYourApproach": "Whatever mechanism you choose, one question will find the hole in it. What stops a busy worker recording fifty trees from the shade without looking at any of them?\n\nA design that cannot answer that is a reporting system, not a verification system, and the donors it is built for will eventually work that out.",
+    "sponsor": "Project Chitoor. Note this team also sponsors Briefs 14 to 17.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — CS, IT, with room for Electronics students on the sensing side.\n- **Technical skills** — Payment and workflow automation, mobile data capture, offline sync, geolocation, image verification, scheduled reporting, audit trail design.\n- **Other skills** — Designing for people who will not be trained, thinking about how a system gets gamed, understanding what an auditor needs."
+   }
+  },
+  {
+   "id": "B14",
+   "source": "partner",
+   "cluster": "MECH",
+   "title": "Solar Dryer Trays That Turn Themselves",
+   "owner": "Project Chitoor",
+   "domains": [
+    "Agriculture",
+    "Livelihoods"
+   ],
+   "summary": "Loading, turning, checking and unloading solar dryer trays is all manual and repeats daily.",
+   "skills": [
+    "Mechanism design",
+    "Fabrication and welding",
+    "Solar and battery power",
+    "Sensors and microcontrollers"
+   ],
+   "detail": {
+    "whoYouWorkWith": "Project Chitoor, described in Brief 13. Around 50 ground workers across 20 clusters do sorting, harvesting support, solar dryer handling, irrigation valve management, sheep feed distribution, deweeding and planting — all by hand.",
+    "situation": "Solar dryers reduce harvested produce to a storable, sellable form. Trays are loaded, turned during drying so material dries evenly, checked repeatedly for dryness, and unloaded when done. All of it is manual and all of it repeats every day the sun is out.",
+    "whatIsGoingWrong": "Two separate problems in one place. The physical handling costs hours of labour per day and does not get cheaper as the project grows. And judging dryness by hand and eye is unreliable: under-dried produce spoils, over-dried produce loses weight and value.",
+    "whyNotFixed": "Commercial drying equipment with automated handling and moisture control exists and is priced for industrial processors. It needs stable mains power, spare parts from a city supplier, and a technician when it breaks. On a working farm with unreliable grid power and no technician within reach, that equipment becomes an expensive shed ornament within a season.",
+    "whatExists": "Solar dryers are already installed and in daily use. You are improving them, not replacing them.\n\nDryer type and dimensions, tray size and weight, what produce is dried, target moisture levels, and current daily labour hours. Go and measure them.",
+    "whatYouHave": "- site access at Chitoor to measure the dryers and test on them. Arranging it is your first job\n- a workshop, tools and a materials budget, none of which is guaranteed. Design for cheap\n- ground staff who do this work daily and know where it is worst\n\nSite access is the make-or-break dependency on this brief. Settle it in week one.",
+    "doneIn90Days": "A working prototype installed and running at one block, plus two numbers: labour hours for that task before and after, measured rather than estimated, and a cost breakdown for rolling it out across more blocks.\n\nYou may take the handling, the moisture sensing, or both. Both is ambitious.",
+    "rules": "- low cost, and repairable locally — no proprietary parts that need a technician from the city\n- runs on solar or battery power, because the grid is not reliable on site\n- rugged enough for daily use on a working farm, not a laboratory demonstration\n- fits the existing infrastructure rather than requiring a rebuild\n- safe for workers who have had no training on it",
+    "findingYourApproach": "Before you design anything, watch the task being done and time it. The parts that look hardest are rarely where the hours go.\n\nThen design for failure rather than for the demonstration: what happens when a bearing seizes with dust in it, whether a worker can clear a jam without tools, and whether your moisture reading tracks the produce being dry or only the surface being dry.",
+    "sponsor": "Project Chitoor.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — Mechanical, with Electronics on the sensing and control side.\n- **Technical skills** — Mechanism design, fabrication and welding, materials for outdoor use, solar and battery power, sensors and microcontrollers, calibration, cost engineering.\n- **Other skills** — Measuring a process before changing it, designing for repair, working alongside people who will use what you build."
+   }
+  },
+  {
+   "id": "B15",
+   "source": "partner",
+   "cluster": "MECH",
+   "title": "Taking Weeds Out Without Taking the Crop",
+   "owner": "Project Chitoor",
+   "domains": [
+    "Agriculture"
+   ],
+   "summary": "Weeding is hand work all season, and the labour grows with every acre farmed.",
+   "skills": [
+    "Mechanism and linkage design",
+    "Soil and tool interaction",
+    "Ergonomics and wear",
+    "Field testing"
+   ],
+   "detail": {
+    "whoYouWorkWith": "Project Chitoor, described in Brief 13.",
+    "situation": "Weeds are removed by hand across the project’s blocks. It is repetitive, it is physically hard, it happens continuously through the growing season, and the labour needed grows in direct proportion to the area farmed.",
+    "whatIsGoingWrong": "This task alone consumes a large share of the 50 ground workers’ time. Every hour spent deweeding is an hour not spent on work that expands the project. It is the clearest example of a task that blocks growth.",
+    "whyNotFixed": "Weeding machinery exists for large monoculture farms with wide, regular rows and tractors to pull it. Project Chitoor has blocks and clusters, not prairie. Herbicides are the other standard answer and are unattractive for a project built around sustainability. And the core difficulty is real: a machine has to remove a plant growing next to another plant without damaging the roots of the one you want.",
+    "whatExists": "Crops grown, row spacing, block layout, soil type and current tools — and how many labour hours deweeding takes now. That last figure matters more than any other on this brief, and only you can go and get it.\n\nThat last figure matters more than any other on this brief. Without it you cannot prove your machine helped.",
+    "whatYouHave": "- site access to measure real rows and test in real soil\n- a workshop, tools and a materials budget, none of which is guaranteed",
+    "doneIn90Days": "A working machine, tested in a real block, with before-and-after labour hours for that block and a cost breakdown for building more. Crop damage must be measured, not assumed to be zero.",
+    "rules": "- crop roots are not damaged, and you have to show this with measurements\n- low cost and locally repairable, with no proprietary parts\n- solar or battery compatible if it is powered at all\n- rugged for daily use, and operable by a worker with no training",
+    "findingYourApproach": "Measure the baseline before you build. Without knowing how many labour hours deweeding takes today, you cannot show your machine helped, and neither can Project Chitoor.\n\nThen take on the unglamorous questions, because they are what decides it: uneven ground, what happens when the mechanism hits a stone, and whether one person can push it for four hours without their back giving out.",
+    "sponsor": "Project Chitoor.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — Mechanical. The purest mechanical engineering problem in this pool.\n- **Technical skills** — Mechanism and linkage design, soil and tool interaction, fabrication, ergonomics, materials and wear, cost engineering, field testing.\n- **Other skills** — Measuring a baseline before you change anything, iterating from failure, designing for the person who has to use it all day."
+   }
+  },
+  {
+   "id": "B16",
+   "source": "partner",
+   "cluster": "MECH",
+   "title": "Planting Faster and Straighter",
+   "owner": "Project Chitoor",
+   "domains": [
+    "Agriculture"
+   ],
+   "summary": "Saplings, slips and seeds are placed by hand, with depth and spacing varying all day.",
+   "skills": [
+    "Jig and fixture design",
+    "Mechanism design",
+    "Ergonomics",
+    "Time and motion measurement"
+   ],
+   "detail": {
+    "whoYouWorkWith": "Project Chitoor, described in Brief 13.",
+    "situation": "Three kinds of planting happen across the project: saplings, slips or rows, and seeds. All are placed by hand. Depth, spacing and placement vary with whoever is doing it and how tired they are.",
+    "whatIsGoingWrong": "Planting is slow, and inconsistent planting costs twice. It costs labour hours now, and it costs yield later, because a sapling planted too deep or too close to its neighbour grows badly. The project describes planting as one of its highest-frequency tasks, which makes it a strong candidate for an early win.",
+    "whyNotFixed": "Mechanical planters exist for single crops at industrial scale. This project plants three different things in different layouts, in blocks rather than long rows, sometimes on uneven ground. A machine built for one of those cases is useless for the others, and buying three is not affordable.",
+    "whatExists": "What is planted, the depth and spacing each needs, the current planting rate per worker, the terrain and the soil. Find all of it out before you draw anything.",
+    "whatYouHave": "- site access, and a planting cycle to test during. Check the calendar early — if planting season falls outside your window you need a different test plan\n- a workshop, tools and a materials budget, none of which is guaranteed\n\nTiming matters more here than on other briefs. If planting season falls outside your cycle, agree an alternative test arrangement in week one.",
+    "doneIn90Days": "A jig or mechanism used by real workers during real planting, with measurements: planting rate before and after, and how consistent the depth and spacing became. A cost breakdown for making more.",
+    "rules": "- low cost and locally repairable\n- works on uneven ground and in real soil conditions\n- light enough to be carried and used all day by one person\n- faster than doing it by hand, proven with a measurement rather than a claim",
+    "findingYourApproach": "Find out where the time actually goes before you design a thing. Marking positions, making holes, placing plants and covering them are four separate tasks, and only one of them is your bottleneck.\n\nCheap and old often wins here. Judge every idea against one test: is it faster than a hand, measured rather than claimed?",
+    "sponsor": "Project Chitoor.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — Mechanical.\n- **Technical skills** — Jig and fixture design, mechanism design, ergonomics, fabrication, materials, time and motion measurement, cost engineering.\n- **Other skills** — Observing work as it is actually done, iterating with the people who use the tool, resisting over-engineering."
+   }
+  },
+  {
+   "id": "B17",
+   "source": "partner",
+   "cluster": "SW",
+   "title": "Why Nobody Uses the Tablets",
+   "owner": "Project Chitoor",
+   "domains": [
+    "Education"
+   ],
+   "summary": "Tablets and a learning platform are in the school. Adoption stalled. Find out why, then fix it.",
+   "skills": [
+    "Offline-first content delivery",
+    "Caching and sync",
+    "Android device management",
+    "Root-cause field research"
+   ],
+   "detail": {
+    "whoYouWorkWith": "Project Chitoor, described in Brief 13. This problem sits in its education work, which the project says is part of its story to investors and press.",
+    "situation": "Tablets and a learning platform have been given to students at the local school. The money is spent and the equipment is there.\n\nAdoption has stalled. The project names three reasons: teachers are unwilling to push usage because it is extra work on top of an existing load, the electricity supply is unreliable, and the internet is inconsistent.",
+    "whatIsGoingWrong": "Expensive hardware is going unused, so the educational benefit is not happening and the story told to donors is not true. Both of those matter to the project.",
+    "whyNotFixed": "Because the usual fix is to ask teachers to try harder, and teachers already have a full day. Any solution resting on goodwill will work for three weeks and then stop. The project is explicit that it wants a system that does not depend on teacher goodwill alone.\n\nThere is also a real possibility nobody has tested: that the stated reasons are not the actual reasons. Nobody has done the diagnosis.",
+    "whatExists": "The tablets and the platform, both already deployed. You must work within them — the project has ruled out proposing replacement hardware.\n\nWhich tablets, which platform, how many, how many teachers and students, and what usage data the platform already records. All of that is yours to establish.",
+    "whatYouHave": "- access to the school, its teachers and its classrooms. This is the same cooperation that is already missing, so winning it is part of the problem\n- whatever usage logs the platform already produces, if you can get hold of them\n\nSchool access is the critical dependency, and it is the same cooperation that is already missing. If you cannot get into a classroom, you cannot do this project. Confirm it in week one.",
+    "doneIn90Days": "Four things:\n\n- a diagnosis of why adoption is low, backed by data rather than opinion, that says which factor matters most\n- an intervention designed from that diagnosis and piloted with at least one teacher or classroom\n- a before-and-after comparison of actual usage\n- a recommendation on whether and how to roll it out to other schools\n\nThe diagnosis is the deliverable that has the most value. If you find that the real barrier is something nobody named, that finding alone justifies the project.",
+    "rules": "- work with the hardware already deployed\n- account for the real electricity and internet situation rather than assuming it improves\n- any process change must add close to zero effort for teachers\n- the result must be runnable by school staff or a small support team after you leave\n- usage measurement must not depend on teachers reporting it themselves",
+    "findingYourApproach": "Notice what your first instinct assumes. Most approaches to this problem assume infrastructure is the barrier, while Project Chitoor’s own description puts teacher workload first.\n\nFind out which is true before you build anything. A team willing to report that the hardware was the wrong purchase will produce something more useful than a team that starts building in week two.",
+    "sponsor": "Project Chitoor, education work.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — CS and IT for the software and monitoring, Electronics for power and connectivity. Also suits students who want research and fieldwork.\n- **Technical skills** — Offline-first content delivery, local caching and syncing, low-power and battery-backed systems, usage logging and analysis, Android device management.\n- **Other skills** — Structured root-cause investigation, interviewing people who may not tell you the real reason, designing a pilot, reporting an unwelcome finding."
+   }
+  },
+  {
+   "id": "B18",
+   "source": "partner",
+   "cluster": "AI",
+   "title": "The Value Chain Research Engine",
+   "owner": "SELCO Foundation",
+   "domains": [
+    "Livelihoods",
+    "Agriculture"
+   ],
+   "summary": "Map a value chain end to end before deciding where energy technology changes an income.",
+   "skills": [
+    "Information retrieval",
+    "Document parsing and extraction",
+    "Language models under a factual constraint",
+    "Citation tracking"
+   ],
+   "detail": {
+    "whoYouWorkWith": "SELCO Foundation is a Bengaluru-registered trust working on sustainable energy access for underserved communities, using decentralised renewable energy to reduce poverty and improve livelihoods. It works across agriculture, animal husbandry, textiles and crafts, micro-businesses, healthcare and the built environment, with documented work in Karnataka, Odisha, Jharkhand and Assam.\n\nThis request comes from its Innovation Team, which designs the energy-enabled livelihood work and needs to understand a value chain before it can place a solution inside it.",
+    "situation": "Before SELCO can decide where a solar dryer or a cold room actually changes someone’s income, it needs to know how a value chain works end to end — who does what, where value is created and lost, where energy and technology are missing, and where a farmer or artisan could move up into being an enterprise.\n\nSELCO needs this for 32 value chains, of which 13 are the priority: rice and paddy, turmeric, millet, pineapple, mushroom, honey, IoT irrigation, poultry, piggery, cane and bamboo, silk, eateries and cafes, and snack making. Each one becomes a presentation following a fixed ten-section structure covering lifecycle, nodal points, stakeholders, challenges, package of practices, technology interventions, capacity building, enterprise opportunities, the SELCO opportunity and income impact.",
+    "whatIsGoingWrong": "The research itself is the bottleneck. Each chain means working through Government of India ministry reports, NABARD and SFAC publications, ICAR material, commodity board data from bodies such as the Spices Board and the Central Silk Board, and state department figures — then extracting comparable information into an identical structure.\n\nSELCO’s quality bar is what makes this hard rather than merely long. Every figure, cost, yield, price and claim must carry a named source with a link or full citation. Unsourced numbers are rejected. Where data does not exist, the gap must be stated plainly rather than filled with a plausible estimate — a draft with an invented number is returned.",
+    "whyNotFixed": "Doing 32 of these by hand is roughly 32 times the work of doing one, because nothing carries over. And the two rules that matter most — every figure sourced, every gap declared — are exactly the two things that break down when a tired person is finishing their fourth deck.",
+    "whatExists": "SELCO has commissioned value chain studies of this type before at state level. Those existing decks and reference material are to be shared at kick-off, and they are the best guide to what “good” looks like.\n\nSection 4 of SELCO’s assignment document sets the mandatory ten-section framework. Obtain it before you write a line, because it defines the output and cannot be restructured.\n\nOnly five of the 19 non-priority value chains have been named so far — tea, oranges, jackfruit, ginger and chilli. The urban and disability-related chains are all still unnamed.\n\nProgramme duration and the four deliverable dates are placeholders in SELCO’s document. Pin them down at kick-off.",
+    "whatYouHave": "- public government, NABARD, SFAC, ICAR, commodity board and state department publications — all openly available\n- SELCO’s prior state-level value chain decks and reference material, promised at kick-off\n- the ten-section framework and a named reviewer at SELCO. Without both you cannot start drafting",
+    "doneIn90Days": "**An important note first.** SELCO wrote this as a research assignment: interns write decks, SELCO reviews them. As written it does not fit this programme, because there is no approach for a team to propose and nothing for a sponsor to choose between, and the output is a set of PowerPoints that shows little of your engineering ability.\n\nThe version in this brief reframes it as a tooling problem, which needs SELCO’s agreement before it runs. Under the reframe you deliver both:\n\n- a working pipeline that helps produce these documents — finding and retrieving relevant published sources, pulling figures into the fixed ten-section structure, attaching a citation to every number it carries, and flagging a section as a gap when it cannot find a sourced figure\n- three finished value chain decks produced using it, meeting SELCO’s quality standard in full\n\nAcross roughly ten teams that produces the priority chains and a tool SELCO keeps.",
+    "rules": "- every figure, cost, yield, price and claim carries a named source with a link or full citation. An unsourced number is a defect\n- a missing figure is reported as a gap. An invented one gets the draft returned. SELCO’s own words: an honest gap is a useful finding\n- indicative costs carry the year as well as the source, because equipment prices date quickly\n- content is written in your own words. Copied text is not accepted\n- data gaps and scope questions are raised in the first week, not at the end\n- final output is PowerPoint and PDF, with a source list appended to each deck\n\nThese rules also define your tool. A pipeline that produces fluent text without a traceable source has automated the one thing SELCO will reject.",
+    "findingYourApproach": "The temptation is to point a language model at the web and generate decks. That fails SELCO’s review, because a model will produce a confident yield figure for turmeric in Odisha with nothing behind it and no way to tell it from a real one.\n\nThe problem worth solving is the inverse of generation. Build something that refuses to state a number it cannot cite, and that treats “no data found” as a correct output rather than a failure.",
+    "sponsor": "SELCO Foundation, Innovation Team. Engaged through Sushma at Xcelerator. Assignment issued 5 September 2026.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — CS, IT. Open to any branch for the research side, since the subject matter spans agriculture, animal husbandry, textiles and small business.\n- **Technical skills** — Information retrieval, document parsing and extraction, citation tracking, working with language models under a factual-accuracy constraint, automated document generation.\n- **Other skills** — Desk research at a professional standard, judging source credibility, writing to a fixed structure, working to a review cycle with external deadlines."
+   }
+  },
+  {
+   "id": "B19",
+   "source": "partner",
+   "cluster": "AI",
+   "title": "Practising on a Student Who Is Not Real",
+   "owner": "Project SparkL",
+   "domains": [
+    "Education"
+   ],
+   "summary": "Facilitator training costs a full day of travel every week. Simulate the student instead.",
+   "skills": [
+    "Controlling and constraining model behaviour",
+    "Evaluation design for open-ended systems",
+    "Dialogue and state modelling",
+    "Kannada language handling"
+   ],
+   "detail": {
+    "whoYouWorkWith": "Project SparkL, described in Brief 06. It works with underprivileged children, many of whom have run away from home, who are placed in a school grade because of their age rather than what they can do. SparkL’s facilitators spend the hours after school closing that gap.\n\nA detail that matters: a child’s grade hides the fact that their reading comprehension, their writing and their reasoning can all be at different levels.",
+    "situation": "SparkL has the design, the curriculum and the facilitators. All of it is offline and manual.\n\nEvery week, every facilitator travels to one location and spends a full day being trained. The founders spend that day with them — teaching, going through feedback, and analysing what happened in the sessions. That day is where the quality comes from.",
+    "whatIsGoingWrong": "The facilitator is the product. Quality control at the facilitator level is the single thing that makes SparkL work, and it currently requires the founders in a room once a week.\n\nSo growth costs founder-days, and there are only so many of those. Seven centres is roughly where that ceiling sits.",
+    "whyNotFixed": "Because recorded training does not build this skill. Teaching a child who has run away from home, who is nine and cannot count, and who may not want to be there, is a practised interaction. You cannot learn it from a video any more than you can learn to swim from one.\n\nThere is a second reason people miss. That weekly day runs in both directions. Training goes down to the facilitators, and feedback and analysis come back up to the founders. A platform that only pushes content downward removes half of what the day does.",
+    "whatExists": "SparkL’s curriculum and pedagogy. These are the organisation’s most valuable asset and they are the input your system depends on entirely. Without them you cannot judge good teaching from bad, and everything below falls apart.\n\nOutside SparkL, this has been tried before and you should read it. Mixed-reality classroom simulators, where trainee teachers practise on student avatars, have been used in American teacher education for over a decade — TeachLivE and Mursion are the two best documented, and a scoping review of the field was published in the CITE Journal in 2026. Separately, simulating students with language models has become an active research area, including a classroom-simulation paper at NAACL 2025 and a full review of the architectures involved published in November 2025.\n\nThe curriculum and pedagogy documents, the structure of the training day, how many facilitators there are, and what the founders actually assess them on. Get these first. Without them you have no way to tell good teaching from bad, and the project has no ground truth.",
+    "whatYouHave": "- the founders, who run the training day and can tell you what they are watching for\n- the facilitators themselves, who are the users\n- a training day to sit in on. Arranging that is the most useful thing you could do in week one\n- recordings or notes from past sessions, if any exist and SparkL will share them",
+    "doneIn90Days": "Something a facilitator used, that a founder watched, and that the founder judged to be worth the time.\n\nSparkL and Xcelerator have already discussed one idea for this: an AI avatar that plays a learner. The facilitator teaches it, and it responds like a child in that situation — starting out not knowing the number system, and appearing to learn as the facilitator applies SparkL’s methods. The avatar can be configured for different circumstances and different kinds of learning difficulty.\n\nTreat that as one promising idea, not as the specification. The outcome SparkL needs is that facilitator quality holds up without the founders in the room every week. If you can achieve that another way, propose it.",
+    "rules": "- **The avatar must be able to fail to learn.** If it improves no matter what the facilitator does, it teaches nothing and is worse than useless, because it rewards bad practice\n- what counts as good teaching comes from SparkL’s pedagogy, not from your judgement or the model’s\n- no data about a real child goes into a model or a third-party service\n- works in Kannada as well as English, on a modest device and a poor connection\n- these are children with difficult histories. Do not build scenarios that simulate distress or trauma for adults to practise on, unless SparkL explicitly designs them and supervises their use\n- keep the upward path: what a facilitator does on the platform must reach the founders as feedback",
+    "findingYourApproach": "A chatbot told to act like a nine-year-old who cannot count demonstrates beautifully for four minutes and then falls apart. Understand why before you propose anything.\n\nThe model already knows arithmetic and drifts back to competence under pressure. It is agreeable, so it will appear to learn from bad teaching, which makes it worse than no tool at all. And real children fail in patterned ways: reciting numbers without understanding quantity, getting it right on Tuesday and wrong on Thursday, guessing what the adult wants instead of thinking.\n\nThe team that makes the avatar refuse to learn when taught badly, and can say where that judgement comes from, has the strongest pitch here.",
+    "sponsor": "Project SparkL founders. This is their third problem in the pool alongside Briefs 06 and 07.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — CS, IT. The most demanding language-model problem in this pool, and not a wrapper exercise.\n- **Technical skills** — Controlling and constraining model behaviour, evaluation design for open-ended systems, conversation and dialogue design, state modelling, offline and low-bandwidth delivery, Kannada language handling.\n- **Other skills** — Understanding pedagogy before automating it, designing a training experience, measuring whether a person actually got better, working with vulnerable-group safeguarding."
+   }
+  },
+  {
+   "id": "B20",
+   "source": "partner",
+   "cluster": "AI",
+   "title": "Telling One Elephant from Another",
+   "owner": "Atria Foundation",
+   "domains": [
+    "Environment"
+   ],
+   "summary": "Management questions are about individual animals, not species counts.",
+   "skills": [
+    "Computer vision and re-identification",
+    "Metric learning and embeddings",
+    "Open-set recognition",
+    "Small, imbalanced datasets"
+   ],
+   "detail": {
+    "whoYouWorkWith": "Atria Foundation, the charitable arm of Atria Group, described in Brief 12. One of its four pillars is Bio-Diversity, which it describes as promoting harmony across species. Its visible work there so far has been plantation drives.\n\nThis problem sits further from that existing work than the Foundation’s other briefs, and it has one hard dependency: identifying individual animals needs a photographic catalogue that somebody has already built. Where that comes from is the first thing to settle.",
+    "situation": "Wildlife management asks questions about individuals, not just species. Is one elephant responsible for most of the crop raiding in a valley, or fifty? Is the animal we translocated the one that came back? How many distinct individuals use this corridor?\n\nRight now those questions are answered by researchers who know the animals personally, which does not scale and disappears when they move on.",
+    "whatIsGoingWrong": "Without individual identification, conflict data describes a place rather than an animal. That changes what you can do about it. A single repeat individual is a management problem with a specific answer. Fifty animals passing through is a landscape problem with a different one. The data cannot currently tell you which you have.",
+    "whyNotFixed": "Some species make this easy. Tigers have stripe patterns that work almost like barcodes. Elephants do not. Identification relies on a combination of features that are harder to read from a photograph: ear fold shape, notches and tears in the ear edge, depigmentation patches, tail and tail-brush condition, body scars, and tusks where present.\n\nThere is also a harder statistical problem underneath, which most projects skip. A system that matches every photograph to the closest animal in its catalogue will confidently mislabel an animal it has never seen. Recognising that a new individual is new is the part that matters and the part that is difficult.",
+    "whatExists": "Read ElephantBook before you propose anything. It is a semi-automated, human-in-the-loop elephant re-identification system published at ACM COMPASS in 2021 and deployed with the Mara Elephant Project in Kenya. Note the word semi-automated: the researchers who built it kept a person in the loop deliberately.\n\nYour genuine contribution is that it was built for African elephants. Asian elephants are a different identification problem — most females and many males are tuskless, so tusk shape, one of the strongest African cues, largely disappears. That gap is real, defensible and worth a paper.\n\nWhether a photographic catalogue of identified individuals exists anywhere, how large it is, and whether it can be shared. This project lives or dies on that answer, so get it in week one.",
+    "whatYouHave": "- photographic data and existing individual identifications from somewhere. This is the difference between a real project and a public-dataset exercise\n- Brief 11 works on the same animals by a different method, for a different sponsor. Talk to whoever takes it — there is more overlap than either brief admits",
+    "doneIn90Days": "A working re-identification system tested on real photographs, reported honestly. Two numbers matter and most projects only report the first:\n\n- how often it correctly matches a photograph to a known individual\n- how often it correctly says “this animal is not in the catalogue”\n\nPlus the workflow around it: how a researcher confirms or rejects a match, and how a new individual gets added.",
+    "rules": "- peer-reviewed documentation standard: reproducible method, stated assumptions, honest error rates\n- report the failure cases, including which animals it confuses and why\n- location data for individual animals is sensitive and can assist poaching. It does not go into a public repository, a public model, or a demo\n- a match is a suggestion to a researcher, never an automatic record",
+    "findingYourApproach": "Read ElephantBook before you propose anything, and notice that its authors kept a human in the loop when they could have automated it. Work out why.\n\nThen answer what the standard approach hides: what your system does with a blurry photograph of an animal it has never seen, and how few photographs of a new individual are enough.",
+    "sponsor": "Atria Foundation, under its Bio-Diversity pillar.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — CS and Electronics. Strong computer vision content.\n- **Technical skills** — Computer vision and re-identification, metric learning and embeddings, open-set recognition, working with small and imbalanced datasets, human-in-the-loop system design.\n- **Other skills** — Reading and building on published research, scientific writing, reporting error honestly, handling sensitive data."
+   }
+  },
+  {
+   "id": "B21",
+   "source": "partner",
+   "cluster": "AI",
+   "title": "Counting What Lives in a Place",
+   "owner": "Atria Foundation",
+   "domains": [
+    "Environment"
+   ],
+   "summary": "Estimate what species live in an area when detection is always imperfect.",
+   "skills": [
+    "Statistical estimation under imperfect detection",
+    "Species classification from image or audio",
+    "Sensor deployment",
+    "Data visualisation"
+   ],
+   "detail": {
+    "whoYouWorkWith": "Atria Foundation, described in Brief 12, under its Bio-Diversity pillar. The Foundation runs plantation drives and describes its aim there as promoting harmony across species. It has no way at present of saying what any of that has done to the life in a place.",
+    "situation": "Someone wants to know what species live in a given area — a forest patch, a farm, a stretch of riverbank. That question sits behind conservation planning, environmental clearance, restoration monitoring and corporate biodiversity reporting.\n\nSeveral methods exist and each sees a different slice:\n\n- **Camera traps** catch ground-dwelling mammals well and miss small, arboreal and nocturnal-silent species\n- **Acoustic recorders** catch birds, bats, frogs and insects that call, and miss everything that does not\n- **Environmental DNA** detects traces of many species from a water or soil sample, but needs a laboratory, sequencing, and a reference database that is incomplete for Indian species\n- **Transect and plot surveys** are reliable and expensive in expert time\n- **Citizen records** such as bird and nature-observation platforms are large and heavily biased toward attractive species near roads",
+    "whatIsGoingWrong": "Each method gives you a list that reflects the method as much as the place. Combining them is not addition, because each one detects different species with different probability, so you cannot simply pool the lists and call it a survey.",
+    "whyNotFixed": "Because it is a genuine open problem in ecology, not an engineering oversight. Estimating how many species are present when your detection is imperfect and varies by method is a live statistical research area. Anyone promising a complete answer is overselling.",
+    "whatExists": "Brief 11 covers acoustic species classification with CWS, and an engineering student is already working on that classifier. This problem overlaps with it directly. Whoever takes this must coordinate with that team, or the two will duplicate each other.\n\nA study site, any existing survey data, and access to recording or sampling equipment. Find out what is available before you choose your methods.",
+    "whatYouHave": "- public biodiversity databases and citizen-science records, which are freely available\n- a real study site, and permission to place equipment on it\n- laboratory access if you want to do any DNA work. Without a sequencing arrangement, environmental DNA is not open to you and you should not build a proposal around it",
+    "doneIn90Days": "One real place, at least two methods, one defensible estimate with its uncertainty stated. That is a complete and honest project.\n\nWhat matters is the combination. Showing how two imperfect methods can be joined into an estimate better than either alone, with the assumptions written down, is the contribution. A species list without a stated detection assumption is a list, not a survey.",
+    "rules": "- every estimate carries its uncertainty and its detection assumptions\n- an absence of records is not evidence of absence, and the output must not imply otherwise\n- location records for threatened species are withheld or made deliberately imprecise\n- any fieldwork follows the permissions required for the site",
+    "findingYourApproach": "Photograph-and-identify platforms already exist and are very good. Rebuilding one is not a contribution.\n\nThe opportunity is in the unglamorous middle: taking data that already exists and turning it into an estimate a conservation planner would act on. That means being honest about what each method cannot see.",
+    "sponsor": "Atria Foundation, under its Bio-Diversity pillar.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — CS and Electronics, with a strong pull for anyone interested in ecology or statistics.\n- **Technical skills** — Statistical estimation under imperfect detection, combining heterogeneous data sources, species classification from images or audio, sensor deployment, data visualisation.\n- **Other skills** — Reading ecological literature, stating uncertainty, resisting the urge to claim completeness."
+   }
+  },
+  {
+   "id": "B22",
+   "source": "partner",
+   "cluster": "MECH",
+   "title": "Getting Coconuts Down",
+   "owner": "Atria Foundation",
+   "domains": [
+    "Agriculture"
+   ],
+   "summary": "Skilled climbers are scarce and ageing, and the fruit is at the top of a smooth trunk.",
+   "skills": [
+    "Mechanism and gripper design",
+    "Climbing and traction systems",
+    "Structural analysis and failure modes",
+    "Actuators, control and safety"
+   ],
+   "detail": {
+    "whoYouWorkWith": "Atria Foundation, described in Brief 12. The Foundation’s farm names coconut harvesting as its single biggest operational problem.",
+    "situation": "Coconut palms grow tall, with a smooth unbranched trunk and the fruit at the very top. Harvesting means getting a person or a machine up there, cutting bunches, and getting down. Skilled climbers are scarce, ageing, and the work is dangerous.\n\nThe farm reports that the robots currently available do not work well on coconuts.",
+    "whatIsGoingWrong": "Unharvested or late-harvested coconuts are lost income. Dependence on a shrinking pool of climbers is a risk the farm cannot control. And unlike most farm tasks, this one cannot be solved by simply hiring more people, because the skill takes years to acquire.",
+    "whyNotFixed": "It has been attempted seriously, and you should know the numbers before you propose anything.\n\n**Amaran** is an unmanned robotic coconut tree climber and harvester built at Amrita Vishwa Vidyapeetham, in development since 2014 under Rajesh Kannan Megalingam and published in IEEE in 2020. A ring-shaped body clasps trunks of varying diameter, eight wheels drive it up and around the trunk, it copes with trunks leaning up to 30 degrees, and a robotic arm with four degrees of freedom cuts the bunches. It is teleoperated by app or joystick and carries a backup battery so it can come down if power fails.\n\nIts measured performance is the most useful fact in this brief. Amaran averages **21.9 minutes per tree, of which about 14 minutes is setup**. That works out to roughly 22 trees a day, against about 15 for a human climber before fatigue. Cost is described as the barrier to wider deployment.\n\nThe team’s own summary of the difficulty is worth repeating: no two coconut trees are the same.",
+    "whatExists": "Amaran and the published work around it, including more recent double-ring climber designs. Read the papers. A proposal that reinvents a 2020 design without knowing it exists will not survive the scoping round.\n\nThe most important question on this brief: which machines has the farm actually tried, and how exactly did they fail? Cost, tree geometry, setup time — or were they never tried at all? The answer changes what you should build, so ask before you design.\n\nNumber of palms, height range, trunk lean and diameter, ground conditions between trees, harvest frequency, and current cost per tree. Go and measure.",
+    "whatYouHave": "- the Foundation’s own farm, which should be the easiest site access of any problem in this pool\n- the people who currently harvest, who know exactly where the time goes\n- a workshop, tools and a materials budget, none of which is guaranteed",
+    "doneIn90Days": "Something that goes up a real tree on the real farm and brings coconuts down, tested more than once, with three numbers: time per tree against the current method, cost to build one, and how many of the farm’s trees your design can actually handle.\n\nThat last number is where most designs quietly fail. A machine that works on a straight 40 cm trunk and cannot manage a leaning one has solved a fraction of the problem.",
+    "rules": "- safety first, and this is not a formality. A machine at 20 metres that falls, or a cutting tool that drops, can kill someone. Design the failure case before the working case\n- the tree is not damaged. A palm is a long-term asset and injuring the crown can end it\n- low cost and locally repairable, since cost is exactly what stopped the existing solutions\n- works on the farm’s real range of trunk diameters and leans, not one ideal specimen",
+    "findingYourApproach": "Read the Amaran work before you design anything, then look hard at one number in it. Setup takes roughly fourteen of its twenty-two minutes per tree, so only about eight minutes is climbing and cutting.\n\nMaking the climb faster barely moves the total. Most teams will optimise the wrong number. Decide which number you are attacking, and say so.",
+    "sponsor": "Atria Foundation.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — Mechanical, with Electronics on control and teleoperation. The most demanding mechanical problem in the pool.\n- **Technical skills** — Mechanism and gripper design, climbing and traction systems, structural analysis and failure modes, actuators and control, remote operation, safety engineering, cost engineering.\n- **Other skills** — Reading prior art properly, measuring where time actually goes, designing for the worst tree rather than the best one."
+   }
+  },
+  {
+   "id": "B23",
+   "source": "partner",
+   "cluster": "EE",
+   "title": "Reading a Plant's Electrical Signals",
+   "owner": "Atria Foundation",
+   "domains": [
+    "Agriculture"
+   ],
+   "summary": "By the time stress is visible the damage is days old. Catch it in the plant's signals.",
+   "skills": [
+    "Biopotential measurement",
+    "Electrode design and low-noise amplification",
+    "Signal processing",
+    "Experimental design and statistics"
+   ],
+   "detail": {
+    "whoYouWorkWith": "Atria Foundation, described in Brief 12. This problem sits across two of its pillars — Bio-Diversity and the farm work behind Brief 22 — and would be tested on the Foundation’s own crops.",
+    "situation": "By the time a farmer can see that a plant is stressed — wilting, yellowing, stunted growth — the damage has usually been happening for days. Water stress, disease, nutrient deficiency and heat all announce themselves late. Anything that gives warning earlier is worth money and worth water.",
+    "whatIsGoingWrong": "Existing early-warning tools measure the environment rather than the plant. Soil moisture sensors tell you about the soil. Weather stations tell you about the air. Neither tells you what the plant is actually experiencing, and two plants in the same soil can be in very different states.",
+    "whatExists": "A substantial research literature on plant electrical signalling, including recent reviews and a body of work on electrophysiology for crop production. Commercial plant electrophysiology sensing exists. Low-cost electrode and amplifier designs for plant signals are widely published, so the hardware is within reach of a student budget.\n\nWhich site would host an experiment and which crops it grows. Settle both before week three, because the experiment needs a baseline period before anything else can happen.",
+    "whatYouHave": "- published research and open hardware designs for plant electrode measurement\n- plants, growing space, and the ability to control watering and conditions\n- laboratory or greenhouse access, which makes a controlled experiment far easier",
+    "doneIn90Days": "A real experiment with a real answer, either way.\n\n- instrument a set of plants of one species, with a control group kept healthy\n- apply one known, controlled stress — withholding water is the easiest to do properly\n- record electrical signals continuously, and record visible condition separately\n- report whether the signal distinguished stressed from healthy plants, and crucially **how long before the stress became visible**\n\nThat last number is the entire value of the project. If the signal tells you two days early, you have something a farmer would use. If it tells you at the same moment the leaves droop, you have proved something useful and negative.",
+    "rules": "- a control group is required. Without unstressed plants measured the same way, you have no result\n- any claim about health carries the number of plants, the effect size and how confident you are\n- sonification, if you build it, is presented as an output. It is never offered as evidence\n- a negative result reported clearly is a successful project. Manufacturing a positive one is not\n- no claims about plant consciousness, emotion, communication or preference. None of these follow from an electrical measurement",
+    "findingYourApproach": "A device that clips onto a plant and plays generative music will look and sound wonderful, and will tell nobody anything about the plant.\n\nStart from the experiment and treat the hardware as the means. If your proposal names what you will measure, against what control, and what result would prove you wrong, you are ahead of almost every team on this problem.",
+    "sponsor": "Atria Foundation.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — Electronics primarily, with CS for the analysis. Genuine instrumentation and signal processing content.\n- **Technical skills** — Biopotential measurement, electrode design, low-noise amplification, signal processing, time-series classification, experimental design and statistics.\n- **Other skills** — Designing an experiment that can disprove your own hypothesis, reading scientific literature critically, separating a real effect from a compelling demonstration."
+   }
+  },
+  {
+   "id": "B24",
+   "source": "partner",
+   "cluster": "AI",
+   "title": "The Gap Between Knowing and Doing",
+   "owner": "InspireMinds",
+   "domains": [
+    "Mental health",
+    "Education"
+   ],
+   "summary": "Young adults know what would help their wellbeing and still do not do it. Measure what closes the gap.",
+   "skills": [
+    "Experiment design with human participants",
+    "Wearable and mobile data capture",
+    "Time-series and statistical analysis",
+    "Research ethics and consent"
+   ],
+   "detail": {
+    "whoYouWorkWith": "InspireMinds works on behaviour change in young people, using games, stories, yoga, reflection and design thinking rather than lectures. Its method runs Learn, Experience, Reflect, Apply, Grow.\n\nIt has a real product suite: four illustrated books — CricketYogi teaches the eight limbs of yoga through cricket, Happy Yogi covers nervous-system regulation, Yogic Science links anatomy to sustainability, Wealthy Yogi builds money habits — plus a nutrition game and Swadhyaya, a 21-day self-inquiry journal. It reports reaching more than 2,500 children across 7 or more states.",
+    "situation": "All of that is built for children. InspireMinds now wants to work with colleges, and young adults are a different problem.\n\nThe need is real. InspireMinds cites Deloitte’s 2025 Gen Z and Millennial Survey, which found that 94% of Gen Z respondents in India rate on-the-job learning as the most impactful thing for career progression, and reports that a third of Indian Gen Z respondents experience frequent stress or anxiety during their studies.",
+    "whatIsGoingWrong": "Two things, and the second is the more interesting one.\n\nFirst, a nineteen-year-old will not engage with a picture book written for a ten-year-old. The method may transfer to college students. The material does not.\n\nSecond, and this is the real opening: **InspireMinds cannot yet show that behaviour changed.** Its strongest reported figures are that 91% gained the intended nutritional and wellness knowledge and 87% learned more than two food or nutrient concepts. Read those carefully. Both measure what someone *knows* after a session.\n\nInspireMinds’ own first principle is that children can know what is right and still not do it. So its evidence measures the thing it says is not the problem. Closing that gap — showing a real, observed change in what people actually do — is the most valuable thing a student team could build for this organisation.",
+    "whyNotFixed": "Because measuring behaviour is much harder than measuring knowledge, and much harder than it looks.\n\n- people over-report good habits and under-report bad ones, so asking them is not enough\n- almost any intervention works for three weeks. Novelty alone produces a result, and the interesting question is week seven\n- campus life fights you: irregular timetables, exam cycles, peer norms and hostel routines all overwhelm an individual’s intentions\n- observing behaviour without surveilling people is a genuine design constraint, not a formality",
+    "whatExists": "The product suite, the five-stage pathway, and the pilot results above.\n\nInspireMinds has also proposed a complete format for working with colleges — the Personal Growth Innovation Challenge, where each student picks a personal goal, diagnoses their own gap, and engineers a fix. It is thoughtfully designed. It is also a description of a competition rather than a problem to solve, so this brief takes the organisational need underneath it instead. See section 07.\n\nThe product materials, and the pilot data behind the 91% and 87% figures — how they were measured, and on how many people. Ask for both. The second one tells you what InspireMinds can and cannot currently prove.",
+    "whatYouHave": "- InspireMinds’ behavioural frameworks, curriculum toolkits and facilitation, all of which they have offered\n- a study population sitting on your own campus, which no other brief in this pool has\n- a campus cohort, a room and a timetable slot, and a way of recruiting participants. All of it is yours to organise\n- a facilitation session from InspireMinds during your cycle, if you ask for one\n- whoever at Atria approves a study involving students as participants. Find them in week one, because nothing can run without them",
+    "doneIn90Days": "**An important note first.** InspireMinds pitched a campus challenge in which every student picks their own personal goal. That format cannot run inside this programme: with around nine teams each pursuing a different self-chosen goal, there is nothing comparable for a sponsor to greenlight, nothing to hand over at the end, and the evidence a student would carry away is a claim about themselves.\n\nThe version in this brief keeps InspireMinds’ real need and needs their agreement: **design an intervention that changes one specific behaviour in 18 to 22 year olds, run it on a real campus cohort, and measure honestly whether it worked.** Every team then attacks the same target from a different angle, InspireMinds can choose between the approaches, and the winning intervention becomes part of their college offering.\n\nChoose one behaviour and name it precisely. Sleep timing. Screen use after midnight. Eating breakfast. Exercise three times a week. One.\n\nDeliver: the intervention, a measured before-and-after with a comparison or baseline period, and a plain statement of what happened.",
+    "rules": "- **measure behaviour, not knowledge and not intention.** What someone learned, or plans to do, is not a result\n- self-report alone is not enough. Pair it with something observable\n- you need a baseline period or a comparison group. Without one you cannot claim anything\n- every participant consents, knows they can stop, and is never identifiable in what you hand over. They are your classmates, so the pressure to take part is real and you must design it out\n- stay out of clinical territory. If a participant discloses serious distress, you must have a route to a real person who can help, not a form and not a chatbot\n- **report what actually happened.** An intervention that did not work, reported clearly, is a successful project. Manufacturing a positive result is the one failure that matters here\n- you do not diagnose or screen anyone",
+    "findingYourApproach": "There are thousands of habit trackers and their documented problem is that people stop opening them. Assume yours will too, unless you can say why not.\n\nTwo questions decide whether a pitch is serious. What makes someone do the thing on day forty, when the novelty has gone and nobody is watching? And how do you know they did it, without taking their word for it and without following them around?",
+    "sponsor": "InspireMinds.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — CS and IT for the intervention and data, Electronics for sensing and wearables. Open to any branch with an interest in behavioural science or statistics.\n- **Technical skills** — Experiment design, measurement instrumentation, mobile and wearable data capture, time-series and statistical analysis, privacy-preserving data handling, interface design for daily use.\n- **Other skills** — Research ethics and consent, running a study with human participants, recruiting and retaining them, reporting a result that disappoints the sponsor."
+   }
+  },
+  {
+   "id": "B25",
+   "source": "partner",
+   "cluster": "EE",
+   "title": "Ten Rupees a Ride",
+   "owner": "Atria Foundation",
+   "domains": [
+    "Livelihoods",
+    "Accessibility"
+   ],
+   "summary": "Mobile signal along a railway line drops out for long stretches. Serve the passenger anyway.",
+   "skills": [
+    "Wireless networking and capacity planning",
+    "Local caching and content delivery",
+    "Embedded low-power hardware",
+    "Load testing at realistic scale"
+   ],
+   "detail": {
+    "whoYouWorkWith": "Atria Foundation, described in Brief 12. This is one of a group of problems the Foundation has put forward that sit outside its four existing pillars.\n\nBe aware that the brief is built on one paragraph of intent. Almost everything below the situation is yours to establish.",
+    "situation": "Indian Railways moves roughly 23 million passengers a day. A long-distance journey runs for hours. A suburban commute runs twice a day, every day, for years.\n\nMobile signal along a railway line is patchy and drops out entirely for long stretches. So passengers either download something before they board, or stare out of the window.",
+    "whatIsGoingWrong": "Nothing is broken. This is an opportunity that nobody has taken at a price ordinary passengers would pay.\n\nThe target set for you is ten rupees per person per ride. That number is the whole problem. It rules out almost every business model that works elsewhere, and it is low enough that a passenger might actually pay it without thinking.",
+    "whyNotFixed": "Two reasons, and only one of them is technical.\n\nThe technical one is that you cannot stream from the internet on a moving train, so content has to already be on board. Then one server has to serve hundreds of phones at once over wireless, in a metal tube, while everyone is watching something different. Wireless capacity, not storage, is what breaks first.\n\nThe commercial one is harder. At ten rupees a head you cannot license premium film content. The rights alone would eat the fare several times over. Indian Railways has announced its own on-demand video, news and multilingual content on trains, and edge-cached video for rail operators is already a commercial product internationally, so you would not be first.",
+    "whatExists": "Railway station wireless networks, Indian Railways’ own announced onboard entertainment, and international rail streaming products that cache content at the edge. Find out what each of them charges and what content they carry before you assume there is a gap.\n\nWhether the Foundation has any relationship with a railway operator, and whether this has been discussed with anyone at Indian Railways, is for you to find out.",
+    "whatYouHave": "- your own hardware and a coach-sized space to simulate in, since a real train is unlikely to be available to you\n- access to a train, a depot or a railway operator, if you can get it. Without one this is a laboratory project — a legitimate outcome, but a different one",
+    "doneIn90Days": "A working system serving many devices at once from a local cache with no internet, and a costed argument that the whole thing survives at ten rupees a head.\n\nThe demonstration matters less than the number. Show how many simultaneous viewers one unit supports, what it costs to build and run, what content it could legally carry at that price, and how many passengers would have to buy for it to pay for itself.\n\nTest at real scale. Thirty phones in a room is a result. Three is not.",
+    "rules": "- no content is distributed without the right to distribute it. A system that only works by ignoring copyright is not a system\n- the design assumes no internet on board, not slow internet\n- nothing is proposed for installation on rolling stock without acknowledging that railway equipment needs operator approval and certification\n- the ten rupee figure is a constraint to be tested, not an assumption to be quietly dropped. If your model only works at fifty rupees, say so and show the arithmetic",
+    "findingYourApproach": "Most teams will treat this as a streaming problem and build a media server. That part is close to a solved problem, and it will not distinguish you.\n\nThe questions that decide it: how many phones can one wireless access point actually serve before the video stutters, and what changes if everyone watches the same thing at the same time rather than different things? What content can you lawfully carry for ten rupees a head, and who would want it? And who pays — the passenger, an advertiser, or the operator?",
+    "sponsor": "Atria Foundation.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — Electronics for the wireless and hardware side, CS and IT for the software and the caching. One of the more balanced problems in this pool.\n- **Technical skills** — Wireless networking and capacity planning, local caching and content delivery, adaptive streaming, embedded and low-power hardware, load testing at realistic scale.\n- **Other skills** — Unit economics, content licensing basics, reading a regulated environment, testing a claim rather than demonstrating a feature."
+   }
+  },
+  {
+   "id": "B26",
+   "source": "partner",
+   "cluster": "SW",
+   "title": "Work After Sixty",
+   "owner": "Atria Foundation",
+   "domains": [
+    "Livelihoods"
+   ],
+   "summary": "People retire at 58 to 60 with decades of skill left. Match them to work that wants it.",
+   "skills": [
+    "Matching and recommendation logic",
+    "Accessible interfaces for older users",
+    "Lightweight backend",
+    "Demand-side research"
+   ],
+   "detail": {
+    "whoYouWorkWith": "Atria Foundation, described in Brief 12. Its Education pillar already runs skilling and placement through the Atria Mega Skill Centre, which has trained over 4,000 people and placed around 620 with employers. That is the same shape of problem at the other end of a working life.\n\nAs with Brief 25, the brief is built on one paragraph of intent. Establish the rest yourself.",
+    "situation": "People in India’s organised sector typically retire around 58 to 60, and then live for decades. Many of them are highly skilled, have run teams, solved problems and know an industry from the inside.\n\nSome want to keep working. Not all of them on the old terms: fewer hours, no commute, no travel, something that fits around health or caring for a spouse.",
+    "whatIsGoingWrong": "That experience mostly goes unused. The people who want work cannot find the right work, and the constraints they come with — part-time, remote, flexible, no heavy travel — are exactly the ones ordinary job platforms handle worst.",
+    "whatExists": "Several Indian job portals aimed at retired people and the over-sixties. Treat them as your literature review, not your competition.\n\nWhether the Foundation can open a group of retired people, or its Skill Centre employer relationships, to you. Ask early: the employer side is the hard half.",
+    "whatYouHave": "- retired people you can talk to, who are not hard to find and who will tell you things a survey never would\n- the Foundation’s existing employer relationships through the Skill Centre, if they can be opened to you\n- an employer willing to take part in a trial during your cycle. Finding one is arguably the project",
+    "doneIn90Days": "Evidence about the demand side, and something built on top of it.\n\nThe strongest possible outcome is small and real: a handful of genuine matches that happened, with the story of what made each employer say yes. Ten real placements beats a platform with a thousand registered profiles and no vacancies.\n\nIf you conclude the platform is not the answer, say so and show what is. That is a finding, not a failure.",
+    "rules": "- talk to employers in the first two weeks. A team that has only spoken to retirees by week six has built on the easy side of the market\n- no personal data about any individual is published or shared without their clear agreement\n- no promise of work to anyone during a student project. Raising the hopes of someone looking for income is a real harm\n- design around the constraints people actually state, not the ones you assume older people have",
+    "findingYourApproach": "A profile database with a matching algorithm is where almost every team will start, and it is the thing that has already been built several times.\n\nTwo questions decide whether your pitch is serious. Where does the demand come from — what makes an employer post a role they would not otherwise have posted? And what is the smallest version of this that could produce one real match inside your cycle, so you find out whether any of it is true?",
+    "sponsor": "Atria Foundation.\n\nThe programme team will put you in touch and set up the first conversation.",
+    "skillsAndBranches": "- **Branch** — CS and IT. Suits students who want product and research work more than heavy engineering.\n- **Technical skills** — Matching and recommendation logic, accessible interface design for older users, lightweight backend, privacy-aware data handling.\n- **Other skills** — Interviewing on both sides of a market, testing a demand assumption before building, accessibility, reporting a conclusion the sponsor did not expect."
+   }
+  },
+  {
+   "id": "S01",
+   "source": "student",
+   "cluster": "SW",
+   "title": "Veterinary pharmacy and pet care marketplace",
+   "owner": "ResQ",
+   "domains": [
+    "Health",
+    "Accessibility"
+   ],
+   "summary": "Pet medicine, food and care guidance are scattered across sources owners cannot judge.",
+   "skills": [
+    "Marketplace platform build",
+    "Recommendation logic",
+    "Product and dosage data modelling",
+    "Boundaries around medical advice"
+   ],
+   "detail": {
+    "whoYouWorkWith": "We would work with Rescue Every Soul Quickly (ResQ) and pet owners who need convenient access to veterinary medicines, pet food, supplements, healthcare products, and reliable veterinary information.",
+    "situation": "Pet owners may need to choose medicines, food, nutritional products, or other healthcare products for their pets while relevant veterinary information and trusted products are scattered across different sources.",
+    "whatIsGoingWrong": "Scattered information can make it difficult for pet owners to identify suitable products. This may result in incorrect product choices, delayed care, and difficulty managing a pet’s ongoing health needs.",
+    "whyNotFixed": "The problem requires bringing different categories of veterinary and pet-care products into one platform and using pet-specific information such as breed, age, weight, symptoms, and dietary needs to provide personalized guidance.",
+    "whatExists": "Veterinary medicines, pet food, supplements, healthcare products, and veterinary information are available through different sources. The proposed project brings these resources together in a single AI-powered marketplace with personalized product guidance, health reminders, and preventive-care support.",
+    "whatYouHave": "We would work with pet information such as breed, age, weight, symptoms, and dietary needs, along with veterinary medicines, pet food, supplements, healthcare products, and the technical resources required to develop the AI-powered marketplace.",
+    "findingYourApproach": "We would organize pet and product information into a single platform, use the available pet details to provide personalized product guidance, include health reminders and preventive-care support, and connect pet owners with reliable resources while encouraging veterinary consultation for diagnosis and treatment.",
+    "rules": "• Product guidance should be based on the available pet information such as breed, age, weight, symptoms, and dietary needs.\n\n • The platform should encourage veterinary consultation for diagnosis and treatment.\n\n • The system should focus on providing convenient and reliable resources for pet owners.\n\n • Only the available technical resources, data, time, and budget can be used.",
+    "doneIn90Days": "By the end of 90 days, we will have developed a working prototype of the RESQ-Veterinary AI Market Place that brings veterinary medicines, pet food, supplements, and healthcare products into a single platform. The prototype will demonstrate AI-based personalized product guidance using pet information such as breed, age, weight, symptoms, and dietary needs, along with health reminders and preventive-care support. We will also document the system workflow, product and pet information structure, AI-based recommendation approach, testing results, limitations, and the role of veterinary consultation, along with a final prototype demonstrating the feasibility of the proposed solution."
+   }
+  },
+  {
+   "id": "S02",
+   "source": "student",
+   "cluster": "AI",
+   "title": "AI health records and early detection",
+   "owner": "ResQ",
+   "domains": [
+    "Health"
+   ],
+   "summary": "Read records, symptoms and test results together to flag risk early.",
+   "skills": [
+    "Health data modelling",
+    "Risk pattern detection",
+    "Privacy, consent and security",
+    "Clinical validation with professionals"
+   ],
+   "detail": {
+    "whoYouWorkWith": "We would work with Rescue Every Soul Quickly (ResQ), patients, caregivers, and healthcare professionals who need accessible and organized health information and timely health-risk insights.",
+    "situation": "Patients may have health information spread across medical records, symptoms, medical history, and diagnostic test results. Tracking this information over time and recognizing meaningful patterns can be difficult when it is not organized in one structured digital profile.",
+    "whatIsGoingWrong": "Important health trends or potential risk factors may be difficult to identify early when patient information is scattered or manually reviewed. This can make long-term health tracking and timely action more difficult.",
+    "whyNotFixed": "Developing an AI-based system that can analyze different types of health information, identify meaningful patterns, protect sensitive patient data, and provide useful early-risk insights is technically challenging. The system must also be designed so that AI insights support professional medical diagnosis rather than replace it.",
+    "whatExists": "Digital medical records, electronic health records, diagnostic reports, and AI-based healthcare tools already exist. This project aims to organize relevant patient information into a structured digital health profile and use AI-based analysis to support early identification of potential health risks.",
+    "whatYouHave": "We would work with patient health records, symptoms, medical history, diagnostic test results, suitable AI/ML methods, a secure digital health-record structure, and the technical resources required to develop and test the platform.",
+    "findingYourApproach": "We would study existing digital health-record and AI-based healthcare approaches, organize patient information into a structured profile, identify suitable AI/ML methods for pattern and risk-factor analysis, develop a working prototype, and test its ability to present useful early-risk insights while maintaining appropriate data-security and privacy considerations.",
+    "rules": "- Patient health information must be handled securely and privacy must be protected.\n\n- The system should use appropriate and reliable health-record information for its intended analysis.\n\n- AI-generated insights must complement professional medical diagnosis and must not be presented as a replacement for healthcare professionals.\n\n- Only the available technical resources, data, time, and budget can be used.\n\n- The platform should be accessible and understandable for its intended users.",
+    "doneIn90Days": "By the end of 90 days, we will have developed a working prototype of the AI Health Records platform that can organize patient information and demonstrate AI-based analysis of symptoms, medical history, and test results for identifying potential early health-risk patterns. We will also document the system workflow, data structure, AI/ML approach, testing results, limitations, privacy considerations, and potential applications, along with a final prototype demonstrating the feasibility of the proposed healthcare solution."
+   }
+  },
+  {
+   "id": "S03",
+   "source": "student",
+   "cluster": "MECH",
+   "title": "Beyond the Bin: eco food packaging",
+   "owner": "Local food vendors and restaurants",
+   "domains": [
+    "Environment",
+    "Waste"
+   ],
+   "summary": "Replace single-use plastic food packaging with something affordable, safe and durable.",
+   "skills": [
+    "Materials selection and testing",
+    "Food-contact safety",
+    "Manufacturing and cost",
+    "Vendor field trials"
+   ],
+   "detail": {
+    "whoYouWorkWith": "We would work with food vendors, restaurants, packaging users, and consumers who need safe, affordable, and environmentally friendly food-packaging materials.",
+    "situation": "Food packaging is widely used to protect and transport food, but many conventional materials are made from plastics or other non-biodegradable materials.",
+    "whatIsGoingWrong": "Conventional packaging generates large amounts of waste and can remain in the environment for a long time. Many sustainable alternatives may also have limitations in strength, durability, water resistance, cost, or food safety.",
+    "whyNotFixed": "Developing a sustainable material that is biodegradable, safe for food contact, strong, lightweight, and affordable is technically challenging. Existing alternatives may not satisfy all these requirements at the same time.",
+    "whatExists": "Materials such as paper, cardboard, bioplastics, starch-based materials, and other biodegradable packaging solutions already exist. Our project aims to develop a novel sustainable food-packaging material with improved environmental performance and practical properties.",
+    "whatYouHave": "We would work with biodegradable or renewable raw materials, natural fibers, agricultural waste, biopolymers, and other suitable materials. We would also need basic laboratory equipment and testing methods to prepare and evaluate the packaging material.",
+    "findingYourApproach": "We would research existing sustainable packaging materials and select suitable raw materials based on availability, cost, biodegradability, strength, moisture resistance, and food-safety requirements. We would then develop different material formulations, prepare prototypes, and test their basic physical and functional properties to identify a suitable sustainable packaging material.",
+    "rules": "- The packaging material must use safe and non-toxic materials suitable for the intended food-packaging application.\n\n- The material should be biodegradable or environmentally sustainable and should minimize plastic waste.\n\n- Food safety and hygiene requirements must not be compromised during material preparation or testing.\n\n- Only the available laboratory equipment, materials, time, and budget can be used.\n\n- The developed material should have sufficient strength and durability for its intended packaging use.\n\n- Materials and processes that could harm people or the environment must not be used.",
+    "doneIn90Days": "By the end of 90 days, we will have successfully developed a prototype of a novel sustainable food-packaging material using suitable biodegradable or renewable raw materials. The prototype will be tested for basic properties such as strength, flexibility, water resistance, biodegradability, and suitability for food-packaging applications. We will also document the material composition, preparation process, test results, limitations, and potential applications, along with a final prototype that demonstrates the feasibility of the developed packaging material."
+   }
+  },
+  {
+   "id": "S04",
+   "source": "student",
+   "cluster": "EE",
+   "title": "Circuit Connect: exam hall verification device",
+   "owner": "Examination Section, Atria IT",
+   "domains": [
+    "Education"
+   ],
+   "summary": "Student verification and B-Form capture in the hall is manual, slow and error-prone.",
+   "skills": [
+    "Embedded hardware design",
+    "ID capture: RFID, biometrics, scanning",
+    "Connectivity to a central system",
+    "Reliability and failure modes"
+   ],
+   "detail": {
+    "whoYouWorkWith": "We would work with the Examination Department, faculty members, and students to understand the requirements and test the EXAM LINK hardware device during the examination process.",
+    "situation": "During examinations, student identity verification and B-Form recording are mainly carried out using physical documents and separate processes. This requires faculty or examination staff to handle and verify student details during the examination.",
+    "whatIsGoingWrong": "The current examination process involves multiple verification steps that require coordination between students and examination staff. Handling physical B-Forms and student verification separately can increase the time required for each verification. There is an opportunity to introduce a dedicated device that can make identity verification and B-Form capture faster, more consistent, and easier to manage.",
+    "whyNotFixed": "Existing examination procedures are designed around established practices and available infrastructure. Developing a dedicated verification device requires integration of biometric sensing, B-Form capture, display, connectivity, and reliable operation within the examination environment.",
+    "whatExists": "The existing examination process uses physical documents and established methods for student identification and B-Form handling. Faculty and examination staff use the available infrastructure to verify students and manage examination materials. EXAM LINK aims to enhance this process by integrating verification and B-Form capture into a dedicated device.",
+    "whatYouHave": "The project will work with ESP32-based controllers, fingerprint sensors, camera modules, display units, speakers, and supporting electronic components. The team will also work with existing examination procedures and physical B-Form requirements. These components and requirements will be integrated into a compact, reliable prototype suitable for examination environments.",
+    "findingYourApproach": "We will develop the EXAM LINK device by integrating fingerprint verification, B-Form image capture, display feedback, and audio assistance into a single ESP32-based terminal. The prototype will be developed and tested module by module before combining the components into one reliable system. The device will then be connected to the software platform through secure Wi-Fi communication for real-time data transfer.",
+    "rules": "- Devices must be safe and reliable for examination use.\n\n- Student verification must be accurate and consistent.\n\n- B-Form information must be captured securely.\n\n- Hardware must be compact and easy to operate.\n\n- Devices must support reliable communication with the central system.",
+    "doneIn90Days": "Within 90 days, the project will have a functional EXAM LINK prototype integrating the ESP32, fingerprint sensor, camera, display, and speaker, with successful student verification and B-Form capture. The device will communicate reliably with the central system through Wi-Fi and will have a compact, functional enclosure suitable for demonstration and testing."
+   }
+  },
+  {
+   "id": "S05",
+   "source": "student",
+   "cluster": "SW",
+   "title": "Code Sync: examination records platform",
+   "owner": "Examination Section, Atria IT",
+   "domains": [
+    "Education"
+   ],
+   "summary": "Identity, attendance, USN and B-Form data sit in separate manual processes across halls.",
+   "skills": [
+    "Centralised data design",
+    "Real-time sync and validation",
+    "Role-based access",
+    "Reporting interfaces"
+   ],
+   "detail": {
+    "whoYouWorkWith": "We would work with the Examination Department, faculty members, students, and technical staff to understand software requirements and develop the EXAM LINK examination management platform.",
+    "situation": "Examination information such as student details, attendance, USN, and B-Form records is handled through separate processes. The Examination Department needs a centralized system to access, manage, and monitor these records efficiently across examination halls",
+    "whatIsGoingWrong": "Examination-related information is generated across different stages of the examination process and requires effective coordination and record management.\n\nMaintaining student verification, attendance, and B-Form information in a connected system can improve accessibility and reduce repetitive data handling.\n\nA centralized platform can provide authorized users with a consistent view of examination information and support efficient monitoring and reporting.",
+    "whyNotFixed": "The existing examination processes are distributed across multiple records and systems, with limited integration between student verification, attendance, answer booklet mapping, and reporting. A unified software platform is therefore required to connect these processes and provide consistent, secure, and accessible examination data.",
+    "whatExists": "Student and examination information is currently maintained through the institution’s available systems and documentation processes.\n\nThese existing resources provide the basic information required for conducting examinations and maintaining records.\n\nEXAM LINK aims to connect relevant information through a centralized platform for easier access, monitoring, and reporting",
+    "whatYouHave": "The project will work with student information, examination schedules, attendance records, B-Form details, and authorized user information.\n\nThe team will use a server, database, APIs, and web-based interfaces to connect and manage the required information.\n\nThe software will be designed to support students, faculty, and the Examination Department through appropriate role-based access.",
+    "findingYourApproach": "We will develop a centralized platform that connects student verification, B-Form records, attendance, examination details, and user management.\n\nThe system will use a secure backend, database, and APIs to exchange validated information between the EXAM LINK hardware and authorized users.\n\nThe platform will be developed and tested with Student, Faculty, and Examination Department interfaces before integration and deployment.",
+    "rules": "Student and examination data must be securely protected.\n\nOnly authorized users should access or modify records.\n\nSystem must prevent duplicate or inconsistent records.\n\nSoftware must support multiple examination halls/devices.\n\nSystem must remain reliable during examination operations.\n\nReal student data and credentials must not be stored in the development repository.",
+    "doneIn90Days": "Within 90 days, the project will have a functional EXAM LINK platform with Student, Faculty, and Examination Department interfaces, supported by a centralized database for student, examination, attendance, and B-Form records. The system will securely connect the hardware, server, and database and demonstrate end-to-end verification, attendance monitoring, and basic reporting."
+   }
+  },
+  {
+   "id": "S06",
+   "source": "student",
+   "cluster": "SW",
+   "title": "Farmer decision platform",
+   "owner": "Digital Green Foundation",
+   "domains": [
+    "Agriculture",
+    "Rural development"
+   ],
+   "summary": "Crop, weather, scheme and market information is fragmented across sources.",
+   "skills": [
+    "Multi-source data integration",
+    "Mobile and multilingual UX",
+    "Advisory logic",
+    "Content accuracy and sourcing"
+   ],
+   "detail": {
+    "whoYouWorkWith": "The project would primarily work with small and marginal farmers and other members of the local agricultural community. The team would also interact with agricultural experts, field workers, NGOs or community organizations, and other stakeholders who can provide practical insights into farming-related problems. Where relevant, the project may also consider interactions with agricultural equipment owners, buyers, and other participants involved in the agricultural supply chain. Their feedback will help the team understand actual farmer requirements and ensure that the proposed platform is designed around practical needs rather than only technical assumptions.",
+    "situation": "Farmers make several important decisions throughout the farming cycle, from selecting a suitable crop and preparing the soil to managing weather risks, diseases, harvesting, and selling the produce. However, access to reliable and timely agricultural information is not always easy, particularly for farmers with limited digital literacy or limited access to agricultural advisory services.",
+    "whatIsGoingWrong": "Farmers may face difficulties in selecting crops according to their soil, climate, season, and local conditions. Unpredictable weather can affect sowing, irrigation, crop growth, and harvesting. Crop diseases and pests can also result in crop losses when they are not identified and managed at an early stage. In addition, farmers may not always have easy access to current information about market prices, demand, potential buyers, or agricultural machinery. These challenges become more difficult when information is available through multiple disconnected sources or is presented in a way that is difficult for farmers to understand and use. As a result, farmers may have difficulty making timely and informed decisions throughout the farming cycle.",
+    "whyNotFixed": "Existing agricultural services and digital platforms often address individual needs such as weather information, crop advisory, market prices, or disease identification.The challenge is bringing these different requirements together in a simple, localized, and farmer-friendly system that can support decision-making across multiple stages of farming.",
+    "whatExists": "There are existing agricultural websites, mobile applications, weather services, market information systems, and crop advisory platforms. Our project will study these existing solutions and identify gaps in usability, integration, localization, and accessibility rather than attempting to duplicate services that already work effectively.",
+    "whatYouHave": "The project will build upon the existing Khet prototype developed during the earlier IDT project and extend it as part of ASIP. The team will work with the knowledge and observations collected during the GKVK field visit, agricultural resources, publicly available agricultural information, user feedback, and suitable technology for developing the platform. The existing prototype provides a starting point for the project, while the ASIP phase will focus on validating actual farmer requirements and improving the platform accordingly. The proposed platform may include crop recommendation, crop and soil information, weather updates, disease identification support, market information, farming guidance, multilingual support, and other features based on validated user needs and project feasibility.",
+    "findingYourApproach": "The team will follow a user-centered and iterative approach. The first stage will involve understanding and validating farmer problems through field interaction, stakeholder discussions, and requirement analysis. Based on the collected information, the team will prioritize the most relevant problems and identify features that can provide practical value. The existing Khet prototype will then be improved based on these findings. The development process will include designing the user interface, implementing selected features, testing the prototype with potential users, collecting feedback, identifying usability issues, and making necessary improvements. The overall approach will focus on developing a practical and accessible solution rather than attempting to implement every proposed feature at once.\n\nConstraints *",
+    "rules": "- The project must solve a validated agricultural problem focused on farmer needs.\n\n- The platform must be simple and easy to use, even for users with limited digital literacy.\n\n- All agricultural data and recommendations must be accurate and sourced reliably.\n\n- AI‑based suggestions must act only as decision‑support, not guaranteed results.\n\n- User data must be handled responsibly and securely.\n\n- The project must stay feasible within ASIP’s timeline and available resources.\n\n- The work must clearly state it is inspired by Digital Green Foundation, not an official collaboration.\n\nDefinition of Done *\n\nWhat does looks like in 90 days:\n\n At the end of the initial 90-day ASIP period, the project should have a validated understanding of the selected farmer problem and clearly documented user requirements obtained through interaction with relevant stakeholders. The existing Khet prototype should be improved into a functional, mobile-friendly agricultural platform based on these findings. The prototype should demonstrate selected core features such as crop recommendation, crop and soil suitability information, weather-related information, agricultural guidance, and basic market information, with additional features included according to priority and feasibility. The platform should provide appropriate language accessibility for the selected target users and should undergo user testing to collect practical feedback. The team should document the testing results, limitations, improvements made, and future development requirements, and should be able to demonstrate the working prototype to faculty and ASIP stakeholders.\n\nTeam Details\n\n Team Name : TEAM CRYPTX Team Code : OwnPS_07\n\n Team Leader Name : R Likhith\n\n Team Leader USN : 1AT25CD058\n\nG. Team Member Details\n\n Please provide the complete team member details.\n\n+====================+=================+======================+===========================+\n\n Note: Please ensure that the problem statement, scope, constraints and definition of done are specific and clear before submitting. The information provided here will be used to create/update the problem statement on the ASIP Portal.",
+    "doneIn90Days": "At the end of the initial 90-day ASIP period, the project should have a validated understanding of the selected farmer problem and clearly documented user requirements obtained through interaction with relevant stakeholders. The existing Khet prototype should be improved into a functional, mobile-friendly agricultural platform based on these findings. The prototype should demonstrate selected core features such as crop recommendation, crop and soil suitability information, weather-related information, agricultural guidance, and basic market information, with additional features included according to priority and feasibility. The platform should provide appropriate language accessibility for the selected target users and should undergo user testing to collect practical feedback. The team should document the testing results, limitations, improvements made, and future development requirements, and should be able to demonstrate the working prototype to faculty and ASIP stakeholders."
+   }
+  },
+  {
+   "id": "S07",
+   "source": "student",
+   "cluster": "SW",
+   "title": "Sync Seller: multi-marketplace dashboard",
+   "owner": "Small online sellers",
+   "domains": [
+    "Livelihoods"
+   ],
+   "summary": "A seller listed on three marketplaces does every task three times.",
+   "skills": [
+    "Marketplace APIs",
+    "Inventory and order synchronisation",
+    "Dashboard design",
+    "Error handling and reconciliation"
+   ],
+   "detail": {
+    "situation": "Sellers may use multiple platforms such as Amazon, Flipkart, Shopify and other marketplaces to sell their products",
+    "whatIsGoingWrong": "Managing products, inventory, orders and customer queries separately on different platforms increases workload and makes it difficult to keep information organized",
+    "whyNotFixed": "Existing platforms mainly provide separate dashboards for their own marketplaces. Some third-party solutions exist, but they can be complex or unsuitable for small sellers.",
+    "whatExists": "Individual seller dashboards and third-party multi-channel management tools are available. Sync Seller focuses on creating a simple and easy-to-use centralized interface for sellers",
+    "whatYouHave": "The project will focus on developing the frontend prototype of Sync Seller, including:\n\n- Seller login/signup interface\n\n- Centralized dashboard\n\n- Product management\n\n- Add/edit/delete product interface\n\n- Platform selection\n\n- Inventory management\n\n- Order management\n\n- Customer messages/inbox\n\n- Synchronization status\n\n- Responsive design\n\n- Interactive navigation",
+    "findingYourApproach": "The team will first understand the challenges faced by online sellers while managing multiple marketplaces. We will design and develop the seller desk frontend with a simple and user-friendly interface for managing products, inventory, orders and customer queries. During the project, the team will also learn and apply full-stack development, including frontend, backend, database management and API integration. The initial prototype will focus on the frontend, with backend and marketplace API integration planned as the project progresses.",
+    "rules": "- The prototype must have a simple and user-friendly interface.\n\n- Platform logos and branding should be used appropriately.\n\n- No unauthorized access to e-commerce platforms.\n\n- Actual platform integration will depend on official API access and approval.\n\n- The initial project will focus on frontend functionality and demonstration.",
+    "doneIn90Days": "A complete, responsive and interactive frontend prototype of Sync Seller will be developed to demonstrate how online sellers can manage multiple e-commerce activities from one dashboard. The prototype should demonstrate: - Product management - Platform selection - Inventory management - Order management - Customer message/inbox interface - Synchronization status - Responsive desktop and mobile design - Smooth navigation between all major sections"
+   }
+  },
+  {
+   "id": "S08",
+   "source": "student",
+   "cluster": "SW",
+   "title": "Surplus food redistribution",
+   "owner": "Robin Hood Army",
+   "domains": [
+    "Waste",
+    "Food security"
+   ],
+   "summary": "Surplus food and hunger exist a few kilometres apart. The routing between them is the problem.",
+   "skills": [
+    "Matching and routing logic",
+    "Volunteer and logistics workflows",
+    "Surplus and demand forecasting",
+    "Food safety constraints"
+   ],
+   "detail": {
+    "whoYouWorkWith": "We would work with restaurants, hotels, college canteens, hostels, supermarkets, event organizers, NGOs, volunteers, and organizations involved in collecting and distributing surplus food.",
+    "situation": "Large quantities of edible food are prepared every day in restaurants, hotels, college canteens, hostels, functions, supermarkets, and households. A portion of this food remains unused because of overproduction, inaccurate demand estimation, cancellations, unsold inventory, or changes in customer demand.\n\nAt the same time, many people and communities face difficulty accessing sufficient food. Although food-delivery platforms have made food easily accessible, there is still no widely integrated system that efficiently identifies surplus food, determines whether it is safe to distribute, and connects it with nearby organizations or people who can use it.",
+    "whatIsGoingWrong": "The current food ecosystem has several gaps.\n\nFirst, food providers often do not know how much food will actually be required, resulting in overproduction. Second, surplus food is frequently identified manually and may not reach an organization quickly enough before its safe consumption window expires.\n\nThird, there is no simple centralized system connecting food donors, NGOs, volunteers, and recipients in real time. Information such as quantity, food type, preparation time, expiry/safe-consumption window, pickup location, and availability may be scattered across phone calls or messaging applications.\n\nThis results in edible food being discarded while potentially useful food remains inaccessible to people who need it.",
+    "whyNotFixed": "Existing food-delivery and inventory systems mainly focus on selling food and managing commercial orders rather than managing surplus food after it becomes available.\n\nSome food donation initiatives operate through manual coordination, but they can face challenges such as delayed communication, inaccurate quantity information, transportation limitations, food-safety verification, and difficulty matching available food with the nearest suitable recipient organization.\n\nA complete solution requires combining AI-based demand prediction, surplus detection, inventory tracking, food-safety information, location-based matching, and volunteer coordination into one lightweight platform.",
+    "whatExists": "Existing technologies include food-delivery applications, inventory-management systems, GPS/location services, database systems, machine-learning prediction algorithms, QR codes, and NGO donation platforms.\n\nHowever, these technologies are generally not integrated into a single system specifically designed to predict food requirements, identify surplus food, prioritize redistribution, and coordinate its collection before the food becomes unusable.",
+    "whatYouHave": "A primarily software-based environment built using Python and free/open-source technologies.\n\nThe system can use synthetic food inventory and demand data for initial development and testing. The application can simulate restaurants, canteens, supermarkets, NGOs, volunteers, and food recipients without requiring physical food-distribution infrastructure during the prototype phase.\n\nPossible technologies include:\n\nPython\n\nStreamlit\n\nPandas\n\nNumPy\n\nScikit-Learn\n\nSQLite\n\nFPDF2\n\nOpenStreetMap-based offline/sample location data where appropriate",
+    "findingYourApproach": "The application will be divided into independent modules.\n\nA Food Provider Module will allow restaurants, canteens, hotels, supermarkets, and event organizers to enter available food, quantity, preparation time, and estimated safe-consumption period.\n\nAn AI Demand Prediction Module will analyse historical consumption patterns and predict approximate future food requirements, helping providers reduce overproduction.\n\nA Surplus Detection Module will identify food that is likely to remain unused based on available quantity, predicted demand, and time remaining.\n\nA Smart Matching Module will match available surplus food with suitable nearby NGOs or distribution partners based on food quantity, food category, location, and urgency.\n\nA Volunteer Coordination Module can generate pickup tasks and prioritize food based on remaining safe-consumption time.\n\nA Food Safety Module will record preparation time, storage conditions entered by the user, and recommended action status. The system will flag entries requiring human verification rather than independently declaring food safe.\n\nAn Analytics Dashboard will display estimated food saved, quantity redistributed, number of donation events, estimated waste prevented, and participating organizations.\n\nFinally, a PDF Report Module will generate downloadable reports containing donation, collection, redistribution, and impact information.",
+    "rules": "○ Software-First Architecture\n\nThe initial prototype must be developed primarily as a software system. Physical sensors, smart packaging, or specialized hardware are not mandatory for the first version.\n\n○ Low-Compute Optimization\n\nThe system must be optimized to operate on standard consumer laptops. Heavy deep-learning models requiring dedicated GPUs should not be necessary for the prototype.\n\n○ Privacy and Responsible Data Handling\n\nThe system should avoid collecting unnecessary personal information about food recipients. Sensitive information should not be exposed through the public dashboard.\n\n○ Food-Safety Limitation\n\nThe application must not independently certify food as safe for human consumption. It can record user-provided information, calculate time-based indicators, and flag food for verification by responsible personnel.\n\n○ Simulation-Based Validation\n\nDuring the prototype stage, testing can be performed using synthetic datasets representing food quantities, demand, locations, preparation times, and donation requests.\n\n○ Human Verification\n\nFinal decisions regarding food safety, collection, and distribution should remain with authorized food providers, NGOs, volunteers, or responsible personnel.",
+    "doneIn90Days": "During the initial 90-day phase, the project will focus on developing technical understanding, defining the food-management workflow, preparing datasets, and creating independent working modules. By Day 90, the project will achieve successful milestone completion when the team has: Completed technical self-study of Python, Pandas, NumPy, Scikit-Learn, Streamlit, and FPDF2. Created a synthetic food-waste and demand dataset. Developed a working food-inventory management module. Developed an AI/ML-based demand prediction prototype. Developed a surplus-food detection algorithm. Created a food donation matching system. Developed a location-based pickup/redistribution workflow using simulated locations. Created a basic volunteer coordination module. Implemented a food-safety information and verification workflow. Created a Streamlit dashboard showing food availability, surplus, donations, and impact."
+   }
+  },
+  {
+   "id": "S09",
+   "source": "student",
+   "cluster": "AI",
+   "title": "Air-defence monitoring console",
+   "owner": "Air defence operators",
+   "domains": [
+    "Other: defence and security"
+   ],
+   "summary": "Detect GPS spoofing and predict curving drone trajectories on one operator console.",
+   "skills": [
+    "GNSS spoofing detection",
+    "Trajectory prediction and tracking",
+    "Anomaly detection",
+    "Operator interface design"
+   ],
+   "detail": {
+    "whoYouWorkWith": "We would work with system operators and monitoring staff at ground radar stations who watch border airspace maps for unusual movements.",
+    "situation": "Ground monitoring stations receive continuous streams of coordinate data (latitude and longitude strings) from radar equipment. Operators use software dashboards to map out these positions visually and spot incoming threats early.",
+    "whatIsGoingWrong": "Current monitoring setups face two critical problems. First, enemy electronic warfare can send fake coordinate data (GPS Spoofing) to the radar screen, showing fake aircraft that do not exist. Second, modern drones fly in curves and zig-zag lines to escape, but traditional tracking software assumes they only fly in straight lines, causing operators to...",
+    "whyNotFixed": "Existing industrial air defense platforms (like the macro-level IACCS framework) are built for heavy server infrastructure and focus heavily on straight-line, long-range heavy aircraft. They require heavy computing hardware and often do not isolate edge-spoofing vectors at the ingestion source level. Furthermore, deep-learning models require expensive graphics processing units (GPUs) that are not available at rural field stations.",
+    "whatExists": "Standard open-source geospatial frameworks (like Python Streamlit and Leaflet maps), statistical machine learning toolkits (Scikit-Learn Regression packages), and standard vector geometry algorithms for signal localization.",
+    "whatYouHave": "A 100% software environment built entirely in Python. We do not have real drones or radar devices. We will use a Python script that generates a simulated stream of moving coordinate pairs (numbers) to act as our fake drone data. We will use free, open-source libraries: Streamlit, Pandas, NumPy, Scikit-Learn, and FPDF2.",
+    "findingYourApproach": "We will split the application into independent code modules. A background loop creates a moving target coordinate list. A security script measures its speed; if it teleports too fast, a cyber alarm triggers. Safe coordinates pass to a simple curve-fitting machine learning function to forecast the next 5 movement points. A separate tab uses circle geometry to intersect radio tower reports, and a PDF writer converts the text tables into a downloadable summary document.",
+    "rules": "100% Python-Based Architecture:\n\nThe entire platform must be coded exclusively in Python. The use of external web languages like HTML, CSS, or JavaScript is restricted to ensure smooth code integration across all team modules.\n\n○ Low-Compute CPU Optimization:\n\nThe system must be optimized to run efficiently on standard consumer laptops. It is restricted from using heavy deep-learning networks that require specialized hardware or dedicated graphics cards (GPUs).\n\n○ Air-Gapped Offline Operation:\n\nIn compliance with military security protocols, the application must function completely offline. It cannot rely on active internet connections, cloud databases, or external mapping APIs.\n\n○ Simulation-Based Validation:\n\nThe project is strictly software-defined. System testing and evaluation trials will be conducted entirely through an internal synthetic data generator, removing any requirement for physical hardware or real drone assets.",
+    "doneIn90Days": "During the initial 90-day phase of this multi-semester project, the core focus is on foundational competence training, data protocol definition, and isolated component prototyping. By Day 90, the project will achieve successful milestone completion when all team members complete technical self-study modules across their respective Python frameworks (Streamlit, Pandas, NumPy, Scikit-Learn, and FPDF2). Concurrently, the team will deliver functioning, independent backend code scripts verified via terminal compilation. These artifacts will include a background telemetry pipeline that structures simulated spatial coordinates at precise time intervals, an automated mathematical validation loop that flags anomalous velocity thresholds for the cybersecurity layer, a localized regression script that outputs single-step predictive trajectories, and a static web-based interface wireframe establishing the core dashboard layout"
+   }
+  },
+  {
+   "id": "S10",
+   "source": "student",
+   "cluster": "EE",
+   "title": "Mine subsidence early warning",
+   "owner": "Ministry of Coal",
+   "domains": [
+    "Environment",
+    "Safety"
+   ],
+   "summary": "Low-cost real-time monitoring and warning for ground subsidence over underground coal mines.",
+   "skills": [
+    "IoT sensing in harsh environments",
+    "Geotechnical and GIS data",
+    "Prediction and alerting",
+    "Field deployment and power"
+   ],
+   "detail": {
+    "whoYouWorkWith": "The project would involve collaboration with underground mine operators, mining engineers, mine safety officers, geologists, geotechnical engineers, mine surveyors, electrical/IoT engineers, AI/ML developers and GIS specialists. The system would also need inputs from personnel responsible for mine planning and emergency response so that alerts generated by the system can support practical operational decisions.\n\nWhere feasible, interaction with communities living near underground mining areas would also help understand the practical impact of subsidence, the warning mechanisms currently available to them, and the type of alerts that would be most useful during a potential ground-instability event.",
+    "situation": "Underground coal extraction can create changes in the stress and stability of the overlying rock and soil layers. In some locations, these changes can eventually result in surface deformation or subsidence, affecting nearby communities, roads, buildings, agricultural land, forests and other infrastructure.\n\nThe problem statement identifies that subsidence monitoring in India is still largely dependent on conventional field observations, periodic surveys and post-facto damage assessments, which may not provide sufficiently timely warning before a critical ground-failure event.\n\nA safer approach requires continuous observation of small changes in the ground before they develop into a more serious event. This creates a need for a low-cost system that can collect measurements continuously from multiple locations, analyze the data automatically and communicate warnings to responsible personnel.",
+    "whatIsGoingWrong": "The main issue is that ground deformation can develop progressively, while monitoring may not always be continuous or spatially dense enough to identify every early-stage change.\n\nImportant indicators such as:\n\n- abnormal ground tilt,\n\n- changes in relative distance between monitoring points,\n\n- early crack formation,\n\n- unusual vibration patterns\n\nmay provide useful evidence of developing instability. The problem specifically identifies these parameters as signals that the proposed system should continuously monitor.\n\nThe lack of a unified real-time system can also make it difficult to combine sensor measurements, historical information, spatial information and AI-based analysis into one operational view.",
+    "whyNotFixed": "Mine subsidence is a complex engineering problem because conditions vary from mine to mine depending on geology, mining methods, underground panel layout, depth, ground characteristics and environmental conditions.\n\nA practical solution also needs to satisfy several requirements simultaneously:\n\nlow cost + continuous sensing + low power operation + reliable communication + accurate anomaly detection + spatial visualization + actionable alerts.\n\nA system designed for underground coal mines cannot simply depend on a single sensor or a generic machine-learning model. It needs multiple sensing points and should be robust enough to operate under Indian geo-mining conditions, therefore calls for a solution that is robust, low power, scalable and suitable for Indian geo-mining conditions.",
+    "whatExists": "Current approaches include conventional field observations, periodic surveys and post-facto damage assessment. The problem also envisages the use of technologies such as tilt/inclination sensors, vibration sensors, displacement/stretch sensors, crack-detection sensors and positioning modules, connected through wireless communication networks such as LoRa, Zigbee or Wi-Fi mesh.\n\nThe proposed project would build on these existing sensing and surveying approaches rather than completely replacing formal mining and geotechnical assessment. Its focus would be on adding a continuous, distributed and AI-assisted monitoring layer that can detect abnormal patterns, estimate risk and generate early warnings.\n\nThe expected solution also includes AI/ML-based anomaly detection, subsidence prediction, GIS-based risk visualization, automated alerts, interactive dashboards, offline capability and scalable deployment.",
+    "whatYouHave": "The project would work with a distributed network of low-cost sensor nodes deployed above or around underground mine panels.\n\nA prototype can be built using hardware such as:\n\n- ESP32 or similar microcontroller\n\n- tilt/inclination sensor\n\n- vibration sensor\n\n- displacement/stretch measurement\n\n- crack detection mechanism\n\n- optional GPS/GNSS or other positioning module\n\n- LoRa or another suitable wireless communication method\n\n- gateway for collecting sensor data\n\n- cloud/local server for processing and storage",
+    "findingYourApproach": "The approach can be divided into five major layers:",
+    "rules": "The system must remain low-cost, energy-efficient, scalable and suitable for deployment in Indian underground coal-mining conditions.\n\nThe following constraints should be considered:",
+    "doneIn90Days": "At the end of 90 days, a functional AI-enabled Mine Subsidence Monitoring and Early Warning prototype should be available for demonstration. The completed system should include: Hardware Prototype A working sensor node based on ESP32 or an equivalent low-cost controller, capable of collecting relevant measurements such as tilt, vibration and displacement-related signals. Real-Time Communication Multiple sensor nodes should be able to transmit data wirelessly to a central gateway/server and display their connectivity and current readings. AI/ML Detection The system should analyze sensor data and identify abnormal patterns associated with potential ground instability. Risk Prediction The platform should calculate a risk/severity level and identify locations where abnormal behavior is detected. GIS Dashboard A web dashboard should display: - live sensor locations, - current sensor readings,"
+   }
+  },
+  {
+   "id": "S11",
+   "source": "student",
+   "cluster": "MECH",
+   "title": "Rain Guard newspaper carrier",
+   "owner": "Newspaper distributors",
+   "domains": [
+    "Livelihoods"
+   ],
+   "summary": "Papers are delivered by bicycle and scooter before dawn, through the monsoon.",
+   "skills": [
+    "Weatherproof enclosure design",
+    "Materials and fastening",
+    "Vehicle mounting and ergonomics",
+    "Low-cost manufacture"
+   ],
+   "detail": {
+    "whoYouWorkWith": "We would work directly with local newspaper distributors and vendors who deliver papers on bicycles and scooters during early morning hours, along with newspaper distribution agencies and vendor associations who can connect us to the wider distributor community. Local hardware and fabrication vendors would support prototyping, and faculty mentors would guide the technical design and testing process.",
+    "situation": "India has one of the largest print media markets in the world, with over 330 million daily newspaper readers. Supporting this ecosystem is a vast network of more than 500,000 newspaper distributors, most of whom operate at the grassroots level using bicycles or scooters to deliver papers during early morning hours, typically between 4 AM and 6 AM. These distributors form the last-mile backbone of print media delivery in India.",
+    "whatIsGoingWrong": "Their work is severely disrupted during the monsoon season, which affects large parts of the country for nearly five to six months every year. Sudden and unpredictable early morning rainfall causes newspapers to become wet and unreadable before they reach the customer. Since distributors carry bundles of 50 to 80 papers at a time with minimal protective covering, even a brief rain shower can damage an entire batch, resulting in direct financial loss for the distributor.",
+    "whyNotFixed": "This problem disproportionately affects economically vulnerable workers who depend entirely on daily delivery completion for their livelihood. There exists no affordable, scalable, or technology-driven solution designed specifically for this segment of workers.",
+    "whatExists": "The current solutions adopted by distributors are entirely manual. Most use a loose plastic sheet to cover their bundle, which is ineffective during heavy rainfall and difficult to deploy quickly while riding in the dark. In cases of very heavy rain, distributors are forced to skip entire delivery routes, leading to customer dissatisfaction, subscription cancellations, and loss of daily income for an already low-margin occupation.",
+    "whatYouHave": "It is a limited prototyping budget for materials such as rain sensors, a small motor/actuator, waterproof fabric, and a mounting frame for bicycles and scooters. Access to a small group of local newspaper distributors for feedback and field testing, along with faculty mentorship and basic electronics/fabrication workshop facilities.",
+    "findingYourApproach": "This project aims to address this gap by designing a smart, portable, weatherproof newspaper carrier system with automatic rain detection and motorized protection, built specifically for use on bicycles and scooters, and priced within reach of the distributor community it serves.",
+    "rules": "The device must be lightweight and compact enough to mount on a standard bicycle or scooter without affecting the rider's balance or visibility. It must be priced within reach of a low-margin distributor's income, operate reliably in low-light, early-morning conditions, and be quick and simple to deploy without slowing down the delivery route.",
+    "doneIn90Days": "A working prototype of the Rain Guard carrier, mounted on a bicycle or scooter, that automatically detects rain and deploys motorized weatherproof protection over a bundle of 50 to 80 newspapers. The prototype will have been field-tested with a small group of real distributors, refined based on their feedback, and validated as affordable and practical enough for everyday use on delivery routes."
+   }
+  },
+  {
+   "id": "S12",
+   "source": "student",
+   "cluster": "MECH",
+   "title": "Medicare nursing and caretaking robot",
+   "owner": "Government hospital patients",
+   "domains": [
+    "Health",
+    "Accessibility"
+   ],
+   "summary": "Nursing support in government hospitals where staff are stretched thin.",
+   "skills": [
+    "Mobile robot platform",
+    "Navigation and manipulation",
+    "Human-robot interaction",
+    "Safety and hygiene standards"
+   ],
+   "detail": {
+    "whoYouWorkWith": "We will work mainly with hospitals and healthcare centers, we aim mainly for government hospital deployment of our final product. We will work with manufacturers, healthcare professionals and will work with rural patients to create requirement portfolios and to conduct research. In the small run, we will mainly work on research and prototyping wherein we will only work with the general population for research.",
+    "situation": "Most government hospitals, especially in rural areas have shown multiple cases of neglect that result in severe health concerns and sometimes even death. Proper hygiene is not maintained and some errors occur due to the ignorance of the deployed healthcare professionals on site. To fix this, we need something completely biased and automated to perform the tasks of the healthcare professional without the judging and ignorance they partake in.\n\nWhat is going wrong?\n\nMultiple deaths occur almost daily due to unhygienic practices carried on in some government hospitals. We also see that certain backward classes face discrimination and are refused service even to this day. The humans in these cases are opinionated and err at times. These simple mistakes like using the same needle on multiple patients, performing diagnosis with unclean thermometers, etc. cause long term health issues like the spreading of blood transfusion diseases like HIV.",
+    "whyNotFixed": "India has not yet advanced to automation in the healthcare sector because of certain fears in the public and this leads to a lot of mistakes still happening at the cost of the lives of people. We need to step into automation to reduce the chances of such errors and this step has not yet been taken nationally.",
+    "whatExists": "There are already certain NGOs and organizations working in India currently to build robots for healthcare but those are precision robots for high-risk surgeries and those do not cover basic healthcare diagnostics and treatment and we plan on making this feature our selling point, if you will. Precision surgical robots can only be deployed in private hospitals that can be accessed by the rich and well-off but the poor and neglected still remain in the same place.",
+    "whatYouHave": "To build the prototype, we will need to work with things like arduino chips, 3D printers, wheels and the like for the body and we will be using software like VSCode, Arduino IDE, and certain AI platforms along with Google docs to maintain our research knowledge.",
+    "findingYourApproach": "We plan on building this by following this approach:",
+    "rules": "The robot will follow all three laws of robotics as per Isaac Asimov.\n\nWe will not build anything that will cause harm to society or any personnel.\n\nWe will get medical approval before deployment.",
+    "doneIn90Days": "After 90 days of dedicated work, we will have a base model with one arm that is mobile enough to hold and press a syringe without extra movement"
+   }
+  },
+  {
+   "id": "S13",
+   "source": "student",
+   "cluster": "SW",
+   "title": "INKZY campus print kiosk",
+   "owner": "Students, submitted via ResQ",
+   "domains": [
+    "Accessibility",
+    "Education"
+   ],
+   "summary": "Printing means leaving campus. Upload, pay and collect from a kiosk instead.",
+   "skills": [
+    "Upload and preview workflow",
+    "Digital payments",
+    "Kiosk hardware integration",
+    "Queue and paper handling"
+   ],
+   "detail": {
+    "whoYouWorkWith": "We would work with vendors, institutions, and who need safe, affordable, institutions ready",
+    "situation": "Currently, students often depend on printing shops located outside or away from their college campus for printing assignments, project reports, notes, and other academic documents. This requires them to spend additional time travelling, waiting in queues, and carrying physical documents between locations. During assignment submissions and examination periods, the demand for printing increases, leading to longer waiting times and inconvenience.\n\nIn many colleges, there is no easily accessible automated printing facility available on campus. Students therefore have limited options when they need an urgent printout.\n\nINKZY addresses this situation by providing an automated, on-campus printing kiosk that allows students to upload documents, select printing options, make digital payments, and collect their prints conveniently from the kiosk.",
+    "whatIsGoingWrong": "- Students have to leave the college campus to access printing services.\n\n- Time is wasted travelling to and waiting at external print shops.\n\n- Long queues can occur during assignment and project submission periods.\n\n- Urgent printing is difficult when nearby shops are closed or crowded.\n\n- Students have to depend on external vendors for simple printing requirements.\n\n- The existing process is mostly anual and does not provide a convenient, automated campus-based solution.\n\n- There is limited integration of digital document upload, online payment, and automated print collection in one system.",
+    "whyNotFixed": "The problem has not been fully addressed because traditional printing shops are still the most common and easily available option for students. Setting up an automated printing kiosk inside a college requires investment in hardware, printing equipment, payment systems, software, maintenance, and secure document handling.\n\nAdditionally, colleges may not have an integrated system that connects digital document uploads with automated printing and collection. Because of these technical, operational, and cost-related challenges, a convenient self-service printing solution has not been widely implemented on college campuses.\n\nINKZY aims to overcome these challenges by combining a digital printing platform with a smart, automated kiosk designed specifically for the college environment.",
+    "whatExists": "Before INKZY, students mainly depended on traditional printing shops, stationery stores, and photocopy centers located near the college campus. Some colleges also provide basic printing facilities through administrative offices or computer labs.\n\nDigital document-sharing and online printing services are also available, but they generally require students to depend on external service providers or wait for delivery.\n\nThese existing solutions provide printing services, but they do not combine on-campus accessibility, digital document upload, online payment, automated printing, and instant collection into a single student-focused system. INKZY is designed to address this gap through a smart self-service printing kiosk.",
+    "whatYouHave": "Existing college printing requirements and student feedback\n\nSmart kiosk hardware such as a printer, touchscreen, QR scanner, and mini PC/Raspberry Pi\n\nDigital payment systems such as UPI\n\nWeb/mobile application for document upload and print selection\n\nCloud/database services for managing documents and print oorder\n\nInternet/Wi-Fi connectivity for communication between the platform and kiosk\n\nSoftware and hardware integration to automate the printing and collection process\n\nCollege infrastructure and available space for installing the kiosk",
+    "findingYourApproach": "Our approach is to develop INKZY as a self-service smart printing system that combines a digital platform with an automated printing kiosk. First, we identify students’ common printing difficulties through observation and feedback. Based on these needs, we design a simple process where students can upload a document, preview it, select printing options, make a digital payment, and collect the printed document from the kiosk.",
+    "rules": "User documents must remain secure and private.\n\nPayments must be processed through secure and trusted methods.\n\nThe kiosk must not operate without proper safety measures.\n\nOnly authorized users should be able to access administrative functions.\n\nThe system must provide accurate printing without unauthorized changes to documents.\n\nThe printer, electrical components, and kiosk hardware must follow appropriate safety standards.\n\nThe system should be reliable and easy for students to use.\n\nINKZY must comply with college rules and applicable data-protection, payment, and electrical-safety requirements.\n\nThe kiosk should not collect unnecessary personal information from students",
+    "doneIn90Days": "In 90 days, INKZY should have a functional working prototype ready for testing in a college environment. The goal is to move from an idea to a practical proof of concept. A working INKZY web/app platform for document upload and print orders A functional kiosk prototype with printer, touchscreen, QR scanner, and payment integration Complete Upload → Preview→ Pay → Print → Collect workflow Basic database and order-management system Testing with a small group of students Feedback collected and improvements made based on real usage • A clear plan for campus deployment and future scalingIn 90 days, INKZY should have a functional working prototype ready for testing in a college environment. The goal is to move from an idea to a practical proof of concept. A working INKZY web/app platform for document upload and print orders A functional kiosk prototype with printer, touchscreen, QR scanner, and payment integration"
+   }
+  },
+  {
+   "id": "S14",
+   "source": "student",
+   "cluster": "EE",
+   "title": "FPGA road hazard detector",
+   "owner": "Commuter, commercial and emergency vehicle operators",
+   "domains": [
+    "Accessibility",
+    "Safety"
+   ],
+   "summary": "Detect road hazards and surface type offline, on low-power hardware in the vehicle.",
+   "skills": [
+    "FPGA acceleration",
+    "CNN model optimisation",
+    "Edge inference without a network",
+    "Camera and sensor integration"
+   ],
+   "detail": {
+    "whoYouWorkWith": "Two-wheeler commuters, gig delivery workers, rural two-wheeler operators, and community road-safety advocacy groups who navigate poorly illuminated, unpaved, or weather-damaged roadways daily without structural vehicular cabin protection.",
+    "situation": "Standard navigation apps guide drivers purely on map coordinates without recognizing physical road conditions. Drivers frequently turn onto degraded rural paths, narrow trails, mud tracks, or waterlogged stretches that are completely unsuited for their vehicle's ground clearance, width, or traction limits.",
+    "whatIsGoingWrong": "A route passable for a tractor or 4x4 SUV causes light delivery vans and ambulances to bottom out or get stuck, passenger cars to scrape underbodies, and two-wheelers to slip. Getting stranded or damaged on remote, unpaved roads leads to delayed emergency responses, disrupted supply chains, vehicle damage, and serious road accidents.",
+    "whyNotFixed": "Cloud-based AI cannot run in rural dead zones and adds dangerous transmission latency. Meanwhile, existing automotive edge GPUs consume 15W–30W+, which overheats without large cooling systems and rapidly drains vehicle batteries. Microcontrollers are too weak to run computer vision models in real time, leaving vehicles without affordable, on-device terrain awareness.",
+    "whatExists": "Standard GPS navigation apps, Software-only smartphone dashcam tools and High-end car ADAS systems",
+    "whatYouHave": "Hardware Platform: AMD/Xilinx FPGA development board\n\nDevelopment Environment: Vivado Design Suite, Vivado HLS / SystemVerilog toolchain, and PYNQ Python-C drivers.\n\nDatasets & Models: Road surface datasets (tar, gravel, mud, standing water), pothole/hazard bounding-box datasets, and lightweight 2D CNN backbones.\n\nSystem Budget: Sub-3W on-chip power envelope running on local Block RAM (BRAM) and DSP slices.",
+    "findingYourApproach": "1. Train a lightweight multi-task 2D CNN model to perform simultaneous road terrain classification and hazard boundary detection.\n\n2. Build a parameterized Processing Element (PE) systolic array and on-chip line buffer in RTL/HLS to accelerate 2D convolutions with minimal memory overhead.\n\n3. Implement a programmable layer scheduler so the accelerator can run arbitrary CNN layer sizes, strides, and skip connections.\n\n4. Develop a vehicle-profile decision engine that compares detected road surface traction and path limits against selected vehicle types (2-wheeler, 3-wheeler, sedan, delivery van, SUV) to output real-time Safe, Caution, or No-Go warnings.",
+    "rules": "1. 100% Offline Operation: Complete vision processing, terrain classification, and vehicle feasibility evaluation must run strictly on-device without internet or cloud communication.\n\n2. Power Cap: Total accelerator hardware power dissipation must stay under 3.0 Watts.\n\n3. Real-Time Performance: Total frame latency must not exceed 30 ms ( ≥ 30 FPS) to alert the driver before entering impassable terrain.\n\n4. Accuracy Retention: Hardware quantization (INT8/FP16/FP8) must maintain accuracy within 2% of the original floating-point model.",
+    "doneIn90Days": "In 90 days, the team will develop, train, and quantize a multi-task CNN model that classifies road terrains (tar, gravel, mud, water) and detects hazards with over 85% accuracy. A vehicle-matching rule engine will be completed in Python to generate real-time Safe, Caution, or No-Go alerts for different vehicle types. In hardware, a parameterized 2D convolution core will be designed and validated in software simulation (Vivado HLS/xsim) using test vectors exported from the trained model. This delivers a verified AI pipeline and simulation-ready accelerator architecture, establishing the complete foundation for future FPGA board deployment."
+   }
+  },
+  {
+   "id": "S15",
+   "source": "student",
+   "cluster": "AI",
+   "title": "Learned anomaly detection for rural infrastructure",
+   "owner": "Rural households and community centres",
+   "domains": [
+    "Rural development",
+    "Water"
+   ],
+   "summary": "Rather than programming every fault, learn what normal looks like and flag the rest.",
+   "skills": [
+    "Unsupervised anomaly detection",
+    "Multi-sensor data fusion",
+    "Alert thresholds and false alarms",
+    "Low-cost sensor deployment"
+   ],
+   "detail": {
+    "whoYouWorkWith": "Rural and urban communities, households, schools, community centres and local facility operators responsible for managing essential resources and infrastructure.",
+    "situation": "Many communities depend on manual monitoring of water systems, electricity, environmental conditions and basic infrastructure. Problems are often noticed only after they cause significant wastage, damage or disruption.",
+    "whatIsGoingWrong": "Water leakage, pump malfunction, abnormal electricity consumption, overheating and other unusual conditions can remain unnoticed for long periods because continuous intelligent monitoring is not readily available.",
+    "whyNotFixed": "Existing systems generally focus on a single parameter or use fixed threshold values. Many solutions can also be expensive or difficult to deploy in resource-limited communities. A low-cost, adaptable system that can learn normal conditions and identify unusual patterns is needed.",
+    "whatExists": "Individual solutions such as water-level controllers, leak detectors, electricity meters, smoke detectors and CCTV systems already exist. However, these systems usually work independently and do not combine multiple parameters to understand the normal behavior of an environment and detect unusual patterns.",
+    "whatYouHave": "A low-cost multi-sensor device, embedded system, communication module, database, anomaly-detection model and simple web/mobile dashboard.",
+    "findingYourApproach": "Collect sensor data, learn normal patterns, detect unusual behaviour and send simple alerts to users. The prototype will be tested using controlled real-world scenarios.",
+    "rules": "- Low-cost and easily available components\n\n- Simple for non-technical users\n\n- Safe and non-invasive testing\n\n- Protect user data\n\n- Must be achievable within the proposed project tenure\n\n- Must demonstrate measurable results",
+    "doneIn90Days": "What does it look like by the end of the project? A working prototype that collects sensor data, learns normal patterns, detects selected abnormal conditions and sends alerts through a dashboard/app. The system will demonstrate at least 3 abnormal scenarios and document its testing results."
+   }
+  }
+ ]
+}

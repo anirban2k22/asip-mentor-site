@@ -1,0 +1,189 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ */
+/* Design tokens                                                       */
+/* Neutrals carry the interface. Cluster colour is the only hue, and   */
+/* every coloured element is paired with a text label and an icon.     */
+/* ------------------------------------------------------------------ */
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: var(--font-serif-body), ui-serif, Georgia, serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --color-canvas: #f6f6f3;
+  --color-surface: #ffffff;
+  --color-ink: #15171c;
+  --color-ink-2: #3a3f4a;
+  --color-muted: #5d6370;
+  --color-faint: #8a8f99;
+  --color-line: #e3e3de;
+  --color-line-strong: #cfcfc8;
+  --color-wash: #efefea;
+
+  --shadow-card: 0 1px 2px rgb(21 23 28 / 0.04), 0 1px 1px rgb(21 23 28 / 0.03);
+  --shadow-lift: 0 10px 30px -12px rgb(21 23 28 / 0.18), 0 2px 6px rgb(21 23 28 / 0.06);
+  --shadow-pop: 0 18px 50px -16px rgb(21 23 28 / 0.28), 0 4px 12px rgb(21 23 28 / 0.08);
+
+  --animate-rise: rise 360ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  --animate-fade: fade 240ms ease-out both;
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+}
+
+/* Cluster palettes. ink passes WCAG AA on both white and soft. */
+[data-cluster="AI"] {
+  --cl-ink: #3f36c4;
+  --cl-solid: #5b54e0;
+  --cl-soft: #eff0ff;
+  --cl-line: #cbcdfb;
+}
+[data-cluster="SW"] {
+  --cl-ink: #0c6560;
+  --cl-solid: #12897f;
+  --cl-soft: #e5f5f2;
+  --cl-line: #a7dcd5;
+}
+[data-cluster="EE"] {
+  --cl-ink: #874600;
+  --cl-solid: #c86b00;
+  --cl-soft: #fdf2e1;
+  --cl-line: #f0cd98;
+}
+[data-cluster="MECH"] {
+  --cl-ink: #a0143e;
+  --cl-solid: #d0305f;
+  --cl-soft: #fdecf1;
+  --cl-line: #f2b6c7;
+}
+
+/* ------------------------------------------------------------------ */
+/* Base                                                                */
+/* ------------------------------------------------------------------ */
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 6rem;
+  }
+  body {
+    @apply bg-canvas text-ink font-sans antialiased;
+    font-feature-settings: "cv11", "ss01";
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: #15171c;
+    color: #fff;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-ink);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Components                                                          */
+/* ------------------------------------------------------------------ */
+
+@layer components {
+  /* Long-form brief text */
+  .prose-brief {
+    @apply font-serif text-[1.0625rem] leading-[1.7] text-ink-2;
+  }
+  .prose-brief > * + * {
+    margin-top: 0.9em;
+  }
+  .prose-brief ul,
+  .prose-brief ol {
+    padding-left: 1.25rem;
+  }
+  .prose-brief ul {
+    list-style: none;
+  }
+  .prose-brief ul > li {
+    position: relative;
+  }
+  .prose-brief ul > li::before {
+    content: "";
+    position: absolute;
+    left: -1rem;
+    top: 0.72em;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 2px;
+    background: var(--cl-solid, var(--color-faint));
+  }
+  .prose-brief ol {
+    list-style: decimal;
+  }
+  .prose-brief ol > li::marker {
+    @apply font-sans text-sm font-semibold text-muted;
+  }
+  .prose-brief li + li {
+    margin-top: 0.45em;
+  }
+  .prose-brief strong {
+    @apply font-semibold text-ink;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-line bg-surface px-3 py-1.5 text-sm font-medium text-ink-2 transition-[background-color,border-color,color,box-shadow] duration-150 select-none;
+  }
+  .chip:hover {
+    @apply border-line-strong bg-wash;
+  }
+  .chip[aria-pressed="true"],
+  .chip[aria-checked="true"] {
+    @apply border-ink bg-ink text-white;
+  }
+
+  .tag {
+    @apply inline-flex items-center rounded-md bg-wash px-2 py-0.5 text-[0.8125rem] leading-5 text-ink-2;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-3.5 py-2 text-sm font-semibold transition-[background-color,border-color,color,box-shadow,transform] duration-150 active:scale-[0.98] disabled:pointer-events-none disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply bg-ink text-white hover:bg-ink-2;
+  }
+  .btn-secondary {
+    @apply border border-line-strong bg-surface text-ink hover:border-ink hover:bg-wash;
+  }
+  .btn-ghost {
+    @apply text-ink-2 hover:bg-wash hover:text-ink;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.12em] text-muted;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+  }
+}

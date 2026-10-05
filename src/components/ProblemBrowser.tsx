@@ -370,7 +370,7 @@ function FilterPanel({
       </fieldset>
 
       <p className="mt-4 border-t border-line pt-3 text-xs text-muted">
-        {meta.note} {sourceCounts.partner} partner, {sourceCounts.student} student.
+        {meta.note}
       </p>
     </section>
   );

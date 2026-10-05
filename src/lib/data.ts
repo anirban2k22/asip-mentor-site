@@ -174,7 +174,7 @@ export const SECTION_LABELS: Readonly<Record<DetailKey, string>> = {
   rules: "Rules",
   findingYourApproach: "Finding your approach",
   sponsor: "Sponsor",
-  skillsAndBranches: "Skills and branches",
+  skillsAndBranches: "Skills and Expertise",
 };
 
 /** URL fragment for each section, used by the in-page section index. */
@@ -192,13 +192,15 @@ export const SECTION_SLUGS: Readonly<Record<DetailKey, string>> = {
   skillsAndBranches: "skills-and-branches",
 };
 
-/**
- * Sections present for a problem, in one fixed order for every record so a
- * mentor always finds "Done in 90 days" in the same place. Missing or blank
- * sections are dropped, never filled.
- */
 export function sectionsFor(p: Problem): { key: DetailKey; text: string }[] {
-  return DETAIL_KEYS.flatMap((key) => {
+  const allowed: DetailKey[] = [
+    "whoYouWorkWith",
+    "situation",
+    "whatIsGoingWrong",
+    "whyNotFixed",
+    "skillsAndBranches",
+  ];
+  return allowed.flatMap((key) => {
     const text = p.detail[key];
     return typeof text === "string" && text.trim() ? [{ key, text }] : [];
   });

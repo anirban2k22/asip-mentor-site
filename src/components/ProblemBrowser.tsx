@@ -102,11 +102,10 @@ function BrowserView({ filters, onChange }: { filters: Filters; onChange: (f: Fi
           id="page-title"
           className="mt-3 max-w-3xl text-[2rem] font-semibold leading-[1.1] tracking-[-0.025em] text-ink sm:text-[2.75rem]"
         >
-          Find the problems you could mentor
+          These are the problem statements
         </h1>
         <p className="mt-4 max-w-2xl text-[1.0625rem] leading-relaxed text-ink-2">
-          {problems.length} problem statements in {clusters.length} clusters. Pick your cluster, scan the summaries
-          and skills, and shortlist the ones that fit. Open any problem to read the full brief.
+          {problems.length} problem statements in {clusters.length} clusters. Pick your cluster and start exploring.
         </p>
       </section>
 

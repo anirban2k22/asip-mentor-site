@@ -135,17 +135,12 @@ export default async function ProblemPage({ params }: Props) {
         <article aria-label={`Full brief for ${p.id}`} className="max-w-[46rem]">
           {sections.map((s, i) => {
             const slug = SECTION_SLUGS[s.key];
-            const featured = s.key === "doneIn90Days";
             return (
               <section
                 key={s.key}
                 id={slug}
                 aria-labelledby={`${slug}-h`}
-                className={
-                  featured
-                    ? "my-10 rounded-2xl border border-(--cl-line) bg-(--cl-soft) p-6 first:mt-0 sm:p-7"
-                    : `py-8 first:pt-0 ${i > 0 && sections[i - 1]?.key !== "doneIn90Days" ? "border-t border-line" : ""}`
-                }
+                className={`py-8 first:pt-0 ${i > 0 ? "border-t border-line" : ""}`}
               >
                 <h2
                   id={`${slug}-h`}

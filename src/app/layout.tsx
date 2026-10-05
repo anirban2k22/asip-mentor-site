@@ -9,10 +9,10 @@ const serif = Source_Serif_4({ subsets: ["latin"], variable: "--font-serif-body"
 
 export const metadata: Metadata = {
   title: {
-    default: "ASIP Mentor guide - choose problems to mentor",
+    default: "ASIP Mentor guide - explore problem statements",
     template: "%s - ASIP Mentor guide",
   },
-  description: `Browse ${problems.length} ASIP problem statements across ${clusters.length} clusters. Filter by cluster, source and domain, shortlist the ones you could mentor.`,
+  description: `Browse ${problems.length} ASIP problem statements across ${clusters.length} clusters. Filter by cluster, source and domain, and shortlist the ones that fit.`,
 };
 
 export const viewport: Viewport = {
